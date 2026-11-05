@@ -8,6 +8,7 @@ export interface User {
   role: Role;
   class_id?: string | null;
   status: 'ACTIVE' | 'LOCKED';
+  password?: string;
   must_change_password?: boolean;
   password_masked?: string;
   created_at?: string;

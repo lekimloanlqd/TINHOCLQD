@@ -102,7 +102,9 @@ export interface DatabaseData {
   settings: SystemSettings;
 }
 
-const DATA_DIR = path.join(process.cwd(), 'data');
+const IS_VERCEL = Boolean(process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME);
+const BASE_DATA_DIR = path.join(process.cwd(), 'data');
+const DATA_DIR = IS_VERCEL ? '/tmp/data' : BASE_DATA_DIR;
 const DB_FILE = path.join(DATA_DIR, 'database.json');
 
 // Calculate total score and classification strictly by business rules (Section XV)
@@ -405,6 +407,17 @@ class Database {
         const raw = fs.readFileSync(DB_FILE, 'utf-8');
         const parsed = JSON.parse(raw);
         if (parsed.users && parsed.classes && parsed.lesson_records) {
+          return parsed;
+        }
+      }
+
+      // If running on Vercel and DB_FILE in /tmp doesn't exist, check BASE_DATA_DIR
+      const baseFile = path.join(BASE_DATA_DIR, 'database.json');
+      if (fs.existsSync(baseFile)) {
+        const raw = fs.readFileSync(baseFile, 'utf-8');
+        const parsed = JSON.parse(raw);
+        if (parsed.users && parsed.classes && parsed.lesson_records) {
+          this.saveDataDirect(parsed);
           return parsed;
         }
       }
