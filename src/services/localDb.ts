@@ -1,7 +1,7 @@
 import type { User, ClassItem, SubjectItem, LessonRecord, DashboardData, AlertItem, SystemSettings } from '../types.ts';
 import { initialData, DatabaseData } from '../data/initialData.ts';
 
-const LOCAL_STORAGE_DB_KEY = 'smart_classbook_local_db_v2';
+const LOCAL_STORAGE_DB_KEY = 'smart_classbook_local_db_v3';
 const TOKEN_KEY = 'smart_classbook_auth_token';
 
 // In-memory token storage for active sessions in client mode
@@ -47,13 +47,31 @@ class LocalDatabase {
     this.data = this.loadData();
   }
 
+  public reloadFromStorage(): DatabaseData {
+    try {
+      if (typeof window !== 'undefined' && window.localStorage) {
+        const stored = localStorage.getItem(LOCAL_STORAGE_DB_KEY);
+        if (stored) {
+          const parsed = JSON.parse(stored);
+          if (parsed && Array.isArray(parsed.classes) && Array.isArray(parsed.lesson_records)) {
+            this.data = parsed;
+            return parsed;
+          }
+        }
+      }
+    } catch (e) {
+      console.warn('Could not read from localStorage', e);
+    }
+    return this.data;
+  }
+
   private loadData(): DatabaseData {
     try {
       if (typeof window !== 'undefined' && window.localStorage) {
         const stored = localStorage.getItem(LOCAL_STORAGE_DB_KEY);
         if (stored) {
           const parsed = JSON.parse(stored);
-          if (parsed && Array.isArray(parsed.classes) && Array.isArray(parsed.lesson_records) && parsed.lesson_records.length > 0) {
+          if (parsed && Array.isArray(parsed.classes) && Array.isArray(parsed.lesson_records)) {
             return parsed;
           }
         }
@@ -79,20 +97,32 @@ class LocalDatabase {
   }
 
   public getSettings(): SystemSettings {
+    this.reloadFromStorage();
     return this.data.settings;
   }
 
   public updateSettings(partial: Partial<SystemSettings>): SystemSettings {
+    this.reloadFromStorage();
     this.data.settings = { ...this.data.settings, ...partial };
     this.saveData(this.data);
     return this.data.settings;
   }
 
+  public syncSettings(incoming: SystemSettings): SystemSettings {
+    this.reloadFromStorage();
+    if (!incoming) return this.data.settings;
+    this.data.settings = { ...incoming, ...this.data.settings };
+    this.saveData(this.data);
+    return this.data.settings;
+  }
+
   public getUserById(id: string): User | undefined {
+    this.reloadFromStorage();
     return this.data.users.find((u) => u.id === id);
   }
 
   public getUserByEmailOrPhone(identifier: string): User | undefined {
+    this.reloadFromStorage();
     const term = identifier.trim().toLowerCase();
     return this.data.users.find(
       (u) =>
@@ -103,6 +133,7 @@ class LocalDatabase {
   }
 
   public login(identifier: string, password: string): { token: string; user: User } {
+    this.reloadFromStorage();
     if (!identifier || !password) {
       throw new Error('Vui lòng nhập tên đăng nhập/email/SĐT và mật khẩu.');
     }
@@ -123,6 +154,7 @@ class LocalDatabase {
   }
 
   public getMe(token: string | null): { user: User | null } {
+    this.reloadFromStorage();
     if (!token) return { user: null };
     let session = sessions.get(token);
     let userId = session?.userId;
@@ -147,6 +179,7 @@ class LocalDatabase {
     currentPassword: string,
     newPassword: string
   ): { success: boolean; message: string; user: User } {
+    this.reloadFromStorage();
     const user = this.getUserById(userId);
     if (!user) throw new Error('Người dùng không tồn tại.');
     if (user.password !== currentPassword) {
@@ -166,29 +199,47 @@ class LocalDatabase {
   }
 
   public getClasses(): ClassItem[] {
-    return this.data.classes;
+    this.reloadFromStorage();
+    return [...this.data.classes];
   }
 
   public addClass(data: Partial<ClassItem>): ClassItem {
+    this.reloadFromStorage();
+    const classId = (data.class_name || data.id || '').trim();
+    if (!classId) throw new Error('Tên lớp là bắt buộc.');
+
+    const existingIndex = this.data.classes.findIndex(
+      (c) => c.id.toLowerCase() === classId.toLowerCase() || c.class_name.toLowerCase() === classId.toLowerCase()
+    );
+
     const newClass: ClassItem = {
-      id: data.class_name!,
-      class_name: data.class_name!,
+      id: classId,
+      class_name: data.class_name || classId,
       grade: Number(data.grade) || 10,
-      school_year: this.data.settings.current_school_year,
+      school_year: data.school_year || this.data.settings.current_school_year,
       homeroom_teacher: data.homeroom_teacher || '',
       student_count: Number(data.student_count) || 40,
       status: data.status || 'ACTIVE',
-      created_at: new Date().toISOString(),
+      created_at: existingIndex >= 0 ? this.data.classes[existingIndex].created_at : new Date().toISOString(),
       updated_at: new Date().toISOString(),
     };
-    this.data.classes.push(newClass);
+
+    if (existingIndex >= 0) {
+      this.data.classes[existingIndex] = newClass;
+    } else {
+      this.data.classes.push(newClass);
+    }
+
     this.saveData(this.data);
     return newClass;
   }
 
   public updateClass(id: string, partial: Partial<ClassItem>): ClassItem {
-    const idx = this.data.classes.findIndex((c) => c.id === id);
-    if (idx === -1) throw new Error('Không tìm thấy lớp học.');
+    this.reloadFromStorage();
+    const idx = this.data.classes.findIndex((c) => c.id === id || c.class_name === id);
+    if (idx === -1) {
+      return this.addClass({ ...partial, id, class_name: partial.class_name || id });
+    }
     this.data.classes[idx] = {
       ...this.data.classes[idx],
       ...partial,
@@ -199,36 +250,72 @@ class LocalDatabase {
   }
 
   public deleteClass(id: string): { message: string } {
+    this.reloadFromStorage();
     const hasRecords = this.data.lesson_records.some((r) => r.class_id === id);
     if (hasRecords) {
       this.updateClass(id, { status: 'INACTIVE' });
       return { message: 'Lớp đã có dữ liệu Sổ đầu bài nên được chuyển sang trạng thái Vô hiệu hóa.' };
     }
-    this.data.classes = this.data.classes.filter((c) => c.id !== id);
+    this.data.classes = this.data.classes.filter((c) => c.id !== id && c.class_name !== id);
     this.saveData(this.data);
     return { message: 'Xóa lớp thành công.' };
   }
 
+  public syncClasses(incoming: ClassItem[]): ClassItem[] {
+    this.reloadFromStorage();
+    if (!Array.isArray(incoming)) return this.data.classes;
+    const map = new Map<string, ClassItem>();
+    incoming.forEach((c) => map.set(c.id, c));
+    this.data.classes.forEach((c) => {
+      const inc = map.get(c.id);
+      if (!inc) {
+        // Class was added locally (like 10/5B), keep it!
+        map.set(c.id, c);
+      } else {
+        const localTime = new Date(c.updated_at || 0).getTime();
+        const incTime = new Date(inc.updated_at || 0).getTime();
+        if (localTime >= incTime) {
+          map.set(c.id, c);
+        }
+      }
+    });
+    this.data.classes = Array.from(map.values());
+    this.saveData(this.data);
+    return this.data.classes;
+  }
+
   public getSubjects(): SubjectItem[] {
-    return this.data.subjects;
+    this.reloadFromStorage();
+    return [...this.data.subjects];
   }
 
   public addSubject(data: Partial<SubjectItem>): SubjectItem {
-    const code = (data.subject_code || '').toUpperCase();
+    this.reloadFromStorage();
+    const code = (data.subject_code || '').toUpperCase().trim();
+    if (!code) throw new Error('Mã môn học là bắt buộc.');
+
+    const existingIdx = this.data.subjects.findIndex((s) => s.id === code || s.subject_code === code);
     const newSub: SubjectItem = {
       id: code,
       subject_code: code,
       subject_name: data.subject_name || '',
       status: data.status || 'ACTIVE',
-      created_at: new Date().toISOString(),
+      created_at: existingIdx >= 0 ? this.data.subjects[existingIdx].created_at : new Date().toISOString(),
       updated_at: new Date().toISOString(),
     };
-    this.data.subjects.push(newSub);
+
+    if (existingIdx >= 0) {
+      this.data.subjects[existingIdx] = newSub;
+    } else {
+      this.data.subjects.push(newSub);
+    }
+
     this.saveData(this.data);
     return newSub;
   }
 
   public updateSubject(id: string, partial: Partial<SubjectItem>): SubjectItem {
+    this.reloadFromStorage();
     const idx = this.data.subjects.findIndex((s) => s.id === id);
     if (idx === -1) throw new Error('Không tìm thấy môn học.');
     this.data.subjects[idx] = {
@@ -241,12 +328,28 @@ class LocalDatabase {
   }
 
   public deleteSubject(id: string): { message: string } {
+    this.reloadFromStorage();
     const idx = this.data.subjects.findIndex((s) => s.id === id);
     if (idx !== -1) {
       this.data.subjects[idx].status = 'INACTIVE';
       this.saveData(this.data);
     }
     return { message: 'Đã vô hiệu hóa môn học.' };
+  }
+
+  public syncSubjects(incoming: SubjectItem[]): SubjectItem[] {
+    this.reloadFromStorage();
+    if (!Array.isArray(incoming)) return this.data.subjects;
+    const map = new Map<string, SubjectItem>();
+    incoming.forEach((s) => map.set(s.id, s));
+    this.data.subjects.forEach((s) => {
+      if (!map.has(s.id)) {
+        map.set(s.id, s);
+      }
+    });
+    this.data.subjects = Array.from(map.values());
+    this.saveData(this.data);
+    return this.data.subjects;
   }
 
   public getLessonRecords(filters?: {
@@ -256,6 +359,7 @@ class LocalDatabase {
     grade?: number;
     date?: string;
   }): LessonRecord[] {
+    this.reloadFromStorage();
     let records = [...this.data.lesson_records];
     if (filters?.class_id) {
       records = records.filter((r) => r.class_id === filters.class_id);
@@ -285,6 +389,7 @@ class LocalDatabase {
   }
 
   public addLessonRecord(record: any, currentUser?: User | null): LessonRecord {
+    this.reloadFromStorage();
     const study = Number(record.study_score) || 0;
     const disc = Number(record.discipline_score) || 0;
     const hyg = Number(record.hygiene_score) || 0;
@@ -292,7 +397,7 @@ class LocalDatabase {
     const { total_score, classification } = computeScoreAndClassification(study, disc, hyg, att);
 
     const newRec: LessonRecord = {
-      id: `rec-${Date.now()}-${Math.floor(Math.random() * 1000)}`,
+      id: record.id || `rec-${Date.now()}-${Math.floor(Math.random() * 1000)}`,
       school_year: record.school_year || this.data.settings.current_school_year,
       class_id: record.class_id,
       date: record.date,
@@ -312,12 +417,26 @@ class LocalDatabase {
       updated_at: new Date().toISOString(),
     };
 
-    this.data.lesson_records.push(newRec);
+    const duplicateIndex = this.data.lesson_records.findIndex(
+      (r) =>
+        r.class_id === newRec.class_id &&
+        r.date === newRec.date &&
+        r.period === newRec.period &&
+        r.subject_id === newRec.subject_id
+    );
+
+    if (duplicateIndex >= 0) {
+      this.data.lesson_records[duplicateIndex] = newRec;
+    } else {
+      this.data.lesson_records.push(newRec);
+    }
+
     this.saveData(this.data);
     return newRec;
   }
 
   public updateLessonRecord(id: string, partial: any): LessonRecord {
+    this.reloadFromStorage();
     const idx = this.data.lesson_records.findIndex((r) => r.id === id);
     if (idx === -1) throw new Error('Không tìm thấy tiết học.');
 
@@ -346,12 +465,14 @@ class LocalDatabase {
   }
 
   public deleteLessonRecord(id: string): { success: boolean; message: string } {
+    this.reloadFromStorage();
     this.data.lesson_records = this.data.lesson_records.filter((r) => r.id !== id);
     this.saveData(this.data);
     return { success: true, message: 'Xóa tiết học thành công!' };
   }
 
   public clearAllRecordsForYear(schoolYear?: string): { success: boolean; message: string; deletedCount: number; school_year: string } {
+    this.reloadFromStorage();
     const year = schoolYear || this.data.settings.current_school_year;
     const prevCount = this.data.lesson_records.length;
     this.data.lesson_records = this.data.lesson_records.filter((r) => r.school_year !== year);
@@ -365,7 +486,30 @@ class LocalDatabase {
     };
   }
 
+  public syncRecords(incoming: LessonRecord[]): LessonRecord[] {
+    this.reloadFromStorage();
+    if (!Array.isArray(incoming)) return this.data.lesson_records;
+    const map = new Map<string, LessonRecord>();
+    incoming.forEach((r) => map.set(r.id, r));
+    this.data.lesson_records.forEach((r) => {
+      const inc = map.get(r.id);
+      if (!inc) {
+        map.set(r.id, r);
+      } else {
+        const localTime = new Date(r.updated_at || 0).getTime();
+        const incTime = new Date(inc.updated_at || 0).getTime();
+        if (localTime >= incTime) {
+          map.set(r.id, r);
+        }
+      }
+    });
+    this.data.lesson_records = Array.from(map.values());
+    this.saveData(this.data);
+    return this.data.lesson_records;
+  }
+
   public batchImportRecords(records: any[], onDuplicateAction: 'skip' | 'update' | 'cancel'): { success: boolean; message: string; stats: any } {
+    this.reloadFromStorage();
     let insertedCount = 0;
     let updatedCount = 0;
     let skippedCount = 0;
@@ -402,6 +546,7 @@ class LocalDatabase {
   }
 
   public getUsers(): User[] {
+    this.reloadFromStorage();
     return this.data.users.map((u) => {
       const { password: _, ...safe } = u;
       return safe as User;
@@ -409,6 +554,7 @@ class LocalDatabase {
   }
 
   public addUser(data: any): User {
+    this.reloadFromStorage();
     const newUser: User = {
       id: `usr-${Date.now()}`,
       full_name: data.full_name,
@@ -429,6 +575,7 @@ class LocalDatabase {
   }
 
   public updateUser(id: string, data: any): User {
+    this.reloadFromStorage();
     const idx = this.data.users.findIndex((u) => u.id === id);
     if (idx === -1) throw new Error('Không tìm thấy người dùng.');
     this.data.users[idx] = {
@@ -442,6 +589,7 @@ class LocalDatabase {
   }
 
   public resetPassword(id: string, newPassword?: string): { message: string } {
+    this.reloadFromStorage();
     const user = this.getUserById(id);
     if (!user) throw new Error('Không tìm thấy người dùng.');
     const pass = newPassword || '123456';
@@ -458,6 +606,7 @@ class LocalDatabase {
     grade?: number;
     school_year?: string;
   }): DashboardData {
+    this.reloadFromStorage();
     let records = [...this.data.lesson_records];
     let classes = this.data.classes.filter((c) => c.status === 'ACTIVE');
 

@@ -86,8 +86,8 @@ export const initialData: DatabaseData = {
       "lpht_name": "Lê Ngọc Ánh",
       "student_count": 42,
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "12/2B",
@@ -99,8 +99,8 @@ export const initialData: DatabaseData = {
       "lpht_name": "Võ Đình Khoa",
       "student_count": 40,
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "12/3B",
@@ -112,8 +112,8 @@ export const initialData: DatabaseData = {
       "lpht_name": "Nguyễn Thị Bích",
       "student_count": 41,
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "12/4B",
@@ -125,8 +125,8 @@ export const initialData: DatabaseData = {
       "lpht_name": "Đặng Tuấn Anh",
       "student_count": 39,
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "11/1B",
@@ -138,8 +138,8 @@ export const initialData: DatabaseData = {
       "lpht_name": "Phạm Minh Đức",
       "student_count": 44,
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "11/2B",
@@ -151,8 +151,8 @@ export const initialData: DatabaseData = {
       "lpht_name": "Bùi Hải Yến",
       "student_count": 43,
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "11/3B",
@@ -164,8 +164,8 @@ export const initialData: DatabaseData = {
       "lpht_name": "Trần Gia Huy",
       "student_count": 42,
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "11/4B",
@@ -177,8 +177,8 @@ export const initialData: DatabaseData = {
       "lpht_name": "Lương Bảo Trâm",
       "student_count": 41,
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "10/1B",
@@ -190,8 +190,8 @@ export const initialData: DatabaseData = {
       "lpht_name": "Hoàng Thị Thảo",
       "student_count": 45,
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "10/2B",
@@ -203,8 +203,8 @@ export const initialData: DatabaseData = {
       "lpht_name": "Trần Văn Khánh",
       "student_count": 45,
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "10/3B",
@@ -216,8 +216,8 @@ export const initialData: DatabaseData = {
       "lpht_name": "Đinh Thị Mai",
       "student_count": 43,
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "10/4B",
@@ -229,8 +229,19 @@ export const initialData: DatabaseData = {
       "lpht_name": "Trần Bảo Ngọc",
       "student_count": 44,
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
+    },
+    {
+      "id": "10/5B",
+      "class_name": "10/5B",
+      "grade": 10,
+      "school_year": "2026-2027",
+      "homeroom_teacher": "Cô Hạnh",
+      "student_count": 42,
+      "status": "ACTIVE",
+      "created_at": "2026-11-05T15:57:09.657Z",
+      "updated_at": "2026-11-05T15:57:09.657Z"
     }
   ],
   "subjects": [
@@ -239,96 +250,96 @@ export const initialData: DatabaseData = {
       "subject_code": "TOAN",
       "subject_name": "Toán học",
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "VAN",
       "subject_code": "VAN",
       "subject_name": "Ngữ văn",
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "ANH",
       "subject_code": "ANH",
       "subject_name": "Tiếng Anh",
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "LY",
       "subject_code": "LY",
       "subject_name": "Vật lí",
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "HOA",
       "subject_code": "HOA",
       "subject_name": "Hóa học",
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "SINH",
       "subject_code": "SINH",
       "subject_name": "Sinh học",
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "SU",
       "subject_code": "SU",
       "subject_name": "Lịch sử",
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "DIA",
       "subject_code": "DIA",
       "subject_name": "Địa lí",
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "GDCD",
       "subject_code": "GDCD",
       "subject_name": "GDCD / KTPL",
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "TIN",
       "subject_code": "TIN",
       "subject_name": "Tin học",
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "TD",
       "subject_code": "TD",
       "subject_name": "Giáo dục thể chất",
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "GDQP",
       "subject_code": "GDQP",
       "subject_name": "GDQP - An ninh",
       "status": "ACTIVE",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     }
   ],
   "lesson_records": [
@@ -349,8 +360,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "rec-2",
@@ -369,8 +380,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "rec-3",
@@ -389,8 +400,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "rec-4",
@@ -409,8 +420,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "rec-5",
@@ -429,8 +440,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "rec-6",
@@ -449,8 +460,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "rec-7",
@@ -469,8 +480,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "rec-8",
@@ -489,8 +500,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "rec-9",
@@ -509,8 +520,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "rec-10",
@@ -529,8 +540,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "rec-11",
@@ -549,8 +560,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "rec-12",
@@ -569,8 +580,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "rec-13",
@@ -589,8 +600,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "rec-14",
@@ -609,8 +620,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.665Z",
-      "updated_at": "2026-11-05T02:08:09.665Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "rec-15",
@@ -629,8 +640,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "rec-16",
@@ -649,8 +660,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.361Z",
+      "updated_at": "2026-09-21T16:47:15.361Z"
     },
     {
       "id": "rec-17",
@@ -669,8 +680,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-18",
@@ -689,8 +700,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-19",
@@ -709,8 +720,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-20",
@@ -729,8 +740,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-21",
@@ -749,8 +760,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-22",
@@ -769,8 +780,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-23",
@@ -789,8 +800,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-24",
@@ -809,8 +820,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-25",
@@ -829,8 +840,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-26",
@@ -849,8 +860,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-27",
@@ -869,8 +880,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-28",
@@ -889,8 +900,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-29",
@@ -909,8 +920,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-30",
@@ -929,8 +940,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-31",
@@ -949,8 +960,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-32",
@@ -969,8 +980,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-33",
@@ -989,8 +1000,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-34",
@@ -1009,8 +1020,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-35",
@@ -1029,8 +1040,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-36",
@@ -1049,8 +1060,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-37",
@@ -1069,8 +1080,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-38",
@@ -1089,8 +1100,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-39",
@@ -1109,8 +1120,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-40",
@@ -1129,8 +1140,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-41",
@@ -1149,8 +1160,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-42",
@@ -1169,8 +1180,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-43",
@@ -1189,8 +1200,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-44",
@@ -1209,8 +1220,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-45",
@@ -1229,8 +1240,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-46",
@@ -1249,8 +1260,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-47",
@@ -1269,8 +1280,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-48",
@@ -1289,8 +1300,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-49",
@@ -1309,8 +1320,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-50",
@@ -1329,8 +1340,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-51",
@@ -1349,8 +1360,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-52",
@@ -1369,8 +1380,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-53",
@@ -1389,8 +1400,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-54",
@@ -1409,8 +1420,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-55",
@@ -1429,8 +1440,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-56",
@@ -1449,8 +1460,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-57",
@@ -1469,8 +1480,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-58",
@@ -1489,8 +1500,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-59",
@@ -1509,8 +1520,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-60",
@@ -1529,8 +1540,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-61",
@@ -1549,8 +1560,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-62",
@@ -1569,8 +1580,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-63",
@@ -1589,8 +1600,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-64",
@@ -1609,8 +1620,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-65",
@@ -1629,8 +1640,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-66",
@@ -1649,8 +1660,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-67",
@@ -1669,8 +1680,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-68",
@@ -1689,8 +1700,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.666Z",
-      "updated_at": "2026-11-05T02:08:09.666Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-69",
@@ -1709,8 +1720,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-70",
@@ -1729,8 +1740,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-71",
@@ -1749,8 +1760,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-72",
@@ -1769,8 +1780,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-73",
@@ -1789,8 +1800,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-74",
@@ -1809,8 +1820,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-75",
@@ -1829,8 +1840,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-76",
@@ -1849,8 +1860,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-77",
@@ -1869,8 +1880,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-78",
@@ -1889,8 +1900,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-79",
@@ -1909,8 +1920,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-80",
@@ -1929,8 +1940,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-81",
@@ -1949,8 +1960,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-82",
@@ -1969,8 +1980,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-83",
@@ -1989,8 +2000,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-84",
@@ -2009,8 +2020,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-85",
@@ -2029,8 +2040,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-86",
@@ -2049,8 +2060,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-87",
@@ -2069,8 +2080,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-88",
@@ -2089,8 +2100,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-89",
@@ -2109,8 +2120,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-90",
@@ -2129,8 +2140,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-91",
@@ -2149,8 +2160,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-92",
@@ -2169,8 +2180,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-93",
@@ -2189,8 +2200,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-94",
@@ -2209,8 +2220,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-95",
@@ -2229,8 +2240,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-96",
@@ -2249,8 +2260,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-97",
@@ -2269,8 +2280,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-98",
@@ -2289,8 +2300,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-99",
@@ -2309,8 +2320,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-100",
@@ -2329,8 +2340,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-101",
@@ -2349,8 +2360,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-102",
@@ -2369,8 +2380,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-103",
@@ -2389,8 +2400,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-104",
@@ -2409,8 +2420,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-105",
@@ -2429,8 +2440,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-106",
@@ -2449,8 +2460,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-107",
@@ -2469,8 +2480,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-108",
@@ -2489,8 +2500,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-109",
@@ -2509,8 +2520,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-110",
@@ -2529,8 +2540,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-111",
@@ -2549,8 +2560,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-112",
@@ -2569,8 +2580,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-113",
@@ -2589,8 +2600,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-114",
@@ -2609,8 +2620,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-115",
@@ -2629,8 +2640,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-116",
@@ -2649,8 +2660,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-117",
@@ -2669,8 +2680,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-118",
@@ -2689,8 +2700,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-119",
@@ -2709,8 +2720,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-120",
@@ -2729,8 +2740,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-121",
@@ -2749,8 +2760,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-122",
@@ -2769,8 +2780,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-123",
@@ -2789,8 +2800,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-124",
@@ -2809,8 +2820,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-125",
@@ -2829,8 +2840,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-126",
@@ -2849,8 +2860,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-127",
@@ -2869,8 +2880,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-128",
@@ -2889,8 +2900,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-129",
@@ -2909,8 +2920,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-130",
@@ -2929,8 +2940,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-131",
@@ -2949,8 +2960,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-132",
@@ -2969,8 +2980,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-133",
@@ -2989,8 +3000,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-134",
@@ -3009,8 +3020,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-135",
@@ -3029,8 +3040,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-136",
@@ -3049,8 +3060,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.362Z",
+      "updated_at": "2026-09-21T16:47:15.362Z"
     },
     {
       "id": "rec-137",
@@ -3069,8 +3080,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-138",
@@ -3089,8 +3100,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-139",
@@ -3109,8 +3120,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-140",
@@ -3129,8 +3140,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-141",
@@ -3149,8 +3160,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-142",
@@ -3169,8 +3180,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-143",
@@ -3189,8 +3200,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-144",
@@ -3209,8 +3220,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-145",
@@ -3229,8 +3240,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-146",
@@ -3249,8 +3260,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-147",
@@ -3269,8 +3280,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-148",
@@ -3289,8 +3300,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-149",
@@ -3309,8 +3320,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-150",
@@ -3329,8 +3340,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-151",
@@ -3349,8 +3360,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-152",
@@ -3369,8 +3380,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-153",
@@ -3389,8 +3400,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-154",
@@ -3409,8 +3420,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-155",
@@ -3429,8 +3440,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-156",
@@ -3449,8 +3460,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-157",
@@ -3469,8 +3480,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-158",
@@ -3489,8 +3500,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-159",
@@ -3509,8 +3520,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-160",
@@ -3529,8 +3540,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-161",
@@ -3549,8 +3560,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-162",
@@ -3569,8 +3580,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-163",
@@ -3589,8 +3600,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-164",
@@ -3609,8 +3620,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-165",
@@ -3629,8 +3640,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-166",
@@ -3649,8 +3660,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-167",
@@ -3669,8 +3680,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-168",
@@ -3689,8 +3700,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-169",
@@ -3709,8 +3720,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-170",
@@ -3729,8 +3740,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-171",
@@ -3749,8 +3760,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-172",
@@ -3769,8 +3780,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-173",
@@ -3789,8 +3800,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-174",
@@ -3809,8 +3820,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-175",
@@ -3829,8 +3840,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-176",
@@ -3849,8 +3860,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-177",
@@ -3869,8 +3880,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-178",
@@ -3889,8 +3900,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-179",
@@ -3909,8 +3920,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-180",
@@ -3929,8 +3940,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-181",
@@ -3949,8 +3960,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-182",
@@ -3969,8 +3980,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-183",
@@ -3989,8 +4000,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-184",
@@ -4009,8 +4020,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-185",
@@ -4029,8 +4040,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-186",
@@ -4049,8 +4060,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-187",
@@ -4069,8 +4080,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-188",
@@ -4089,8 +4100,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-189",
@@ -4109,8 +4120,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-190",
@@ -4129,8 +4140,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-191",
@@ -4149,8 +4160,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-192",
@@ -4169,8 +4180,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-193",
@@ -4189,8 +4200,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-194",
@@ -4209,8 +4220,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-195",
@@ -4229,8 +4240,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-196",
@@ -4249,8 +4260,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.667Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-197",
@@ -4269,8 +4280,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.667Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-198",
@@ -4289,8 +4300,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-199",
@@ -4309,8 +4320,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-200",
@@ -4329,8 +4340,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-201",
@@ -4349,8 +4360,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-202",
@@ -4369,8 +4380,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-203",
@@ -4389,8 +4400,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-204",
@@ -4409,8 +4420,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-205",
@@ -4429,8 +4440,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-206",
@@ -4449,8 +4460,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-207",
@@ -4469,8 +4480,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-208",
@@ -4489,8 +4500,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-209",
@@ -4509,8 +4520,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-210",
@@ -4529,8 +4540,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-211",
@@ -4549,8 +4560,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-212",
@@ -4569,8 +4580,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-213",
@@ -4589,8 +4600,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-214",
@@ -4609,8 +4620,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-215",
@@ -4629,8 +4640,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-216",
@@ -4649,8 +4660,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-217",
@@ -4669,8 +4680,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kê lại bàn ghế ngay ngắn sau giờ học",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-218",
@@ -4689,8 +4700,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kê lại bàn ghế ngay ngắn sau giờ học",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-219",
@@ -4709,8 +4720,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kê lại bàn ghế ngay ngắn sau giờ học",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-220",
@@ -4729,8 +4740,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kê lại bàn ghế ngay ngắn sau giờ học",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-221",
@@ -4749,8 +4760,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-222",
@@ -4769,8 +4780,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-223",
@@ -4789,8 +4800,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-224",
@@ -4809,8 +4820,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-225",
@@ -4829,8 +4840,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-226",
@@ -4849,8 +4860,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-227",
@@ -4869,8 +4880,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-228",
@@ -4889,8 +4900,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-229",
@@ -4909,8 +4920,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-230",
@@ -4929,8 +4940,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.668Z",
-      "updated_at": "2026-11-05T02:08:09.668Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-231",
@@ -4949,8 +4960,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-232",
@@ -4969,8 +4980,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-233",
@@ -4989,8 +5000,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-234",
@@ -5009,8 +5020,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-235",
@@ -5029,8 +5040,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-236",
@@ -5049,8 +5060,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-237",
@@ -5069,8 +5080,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-238",
@@ -5089,8 +5100,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-239",
@@ -5109,8 +5120,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-240",
@@ -5129,8 +5140,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-241",
@@ -5149,8 +5160,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-242",
@@ -5169,8 +5180,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-243",
@@ -5189,8 +5200,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-244",
@@ -5209,8 +5220,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-245",
@@ -5229,8 +5240,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-246",
@@ -5249,8 +5260,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-247",
@@ -5269,8 +5280,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-248",
@@ -5289,8 +5300,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-249",
@@ -5309,8 +5320,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-250",
@@ -5329,8 +5340,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-251",
@@ -5349,8 +5360,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-252",
@@ -5369,8 +5380,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-253",
@@ -5389,8 +5400,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-254",
@@ -5409,8 +5420,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-255",
@@ -5429,8 +5440,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-256",
@@ -5449,8 +5460,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-257",
@@ -5469,8 +5480,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-258",
@@ -5489,8 +5500,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-259",
@@ -5509,8 +5520,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-260",
@@ -5529,8 +5540,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chuẩn bị bài xuất sắc, phát biểu hăng hái",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-261",
@@ -5549,8 +5560,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-262",
@@ -5569,8 +5580,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-263",
@@ -5589,8 +5600,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-264",
@@ -5609,8 +5620,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-265",
@@ -5629,8 +5640,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-266",
@@ -5649,8 +5660,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-267",
@@ -5669,8 +5680,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-268",
@@ -5689,8 +5700,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-269",
@@ -5709,8 +5720,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-270",
@@ -5729,8 +5740,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-271",
@@ -5749,8 +5760,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-272",
@@ -5769,8 +5780,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-273",
@@ -5789,8 +5800,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-274",
@@ -5809,8 +5820,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.363Z"
     },
     {
       "id": "rec-275",
@@ -5829,8 +5840,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.363Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-276",
@@ -5849,8 +5860,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-277",
@@ -5869,8 +5880,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-278",
@@ -5889,8 +5900,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.671Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-279",
@@ -5909,8 +5920,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.671Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-280",
@@ -5929,8 +5940,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-281",
@@ -5949,8 +5960,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-282",
@@ -5969,8 +5980,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-283",
@@ -5989,8 +6000,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-284",
@@ -6009,8 +6020,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-285",
@@ -6029,8 +6040,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-286",
@@ -6049,8 +6060,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-287",
@@ -6069,8 +6080,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-288",
@@ -6089,8 +6100,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-289",
@@ -6109,8 +6120,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-290",
@@ -6129,8 +6140,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-291",
@@ -6149,8 +6160,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-292",
@@ -6169,8 +6180,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-293",
@@ -6189,8 +6200,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-294",
@@ -6209,8 +6220,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-295",
@@ -6229,8 +6240,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-296",
@@ -6249,8 +6260,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-297",
@@ -6269,8 +6280,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-298",
@@ -6289,8 +6300,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-299",
@@ -6309,8 +6320,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-300",
@@ -6329,8 +6340,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-301",
@@ -6349,8 +6360,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-302",
@@ -6369,8 +6380,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-303",
@@ -6389,8 +6400,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-304",
@@ -6409,8 +6420,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-305",
@@ -6429,8 +6440,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-306",
@@ -6449,8 +6460,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-307",
@@ -6469,8 +6480,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-308",
@@ -6489,8 +6500,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-309",
@@ -6509,8 +6520,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-310",
@@ -6529,8 +6540,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-311",
@@ -6549,8 +6560,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-312",
@@ -6569,8 +6580,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-313",
@@ -6589,8 +6600,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-314",
@@ -6609,8 +6620,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-315",
@@ -6629,8 +6640,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-316",
@@ -6649,8 +6660,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-317",
@@ -6669,8 +6680,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-318",
@@ -6689,8 +6700,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-319",
@@ -6709,8 +6720,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-320",
@@ -6729,8 +6740,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-321",
@@ -6749,8 +6760,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-322",
@@ -6769,8 +6780,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-323",
@@ -6789,8 +6800,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-324",
@@ -6809,8 +6820,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-325",
@@ -6829,8 +6840,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-326",
@@ -6849,8 +6860,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-327",
@@ -6869,8 +6880,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-328",
@@ -6889,8 +6900,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-329",
@@ -6909,8 +6920,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-330",
@@ -6929,8 +6940,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-331",
@@ -6949,8 +6960,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-332",
@@ -6969,8 +6980,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-333",
@@ -6989,8 +7000,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-334",
@@ -7009,8 +7020,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-335",
@@ -7029,8 +7040,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-336",
@@ -7049,8 +7060,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-337",
@@ -7069,8 +7080,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-338",
@@ -7089,8 +7100,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-339",
@@ -7109,8 +7120,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-340",
@@ -7129,8 +7140,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-341",
@@ -7149,8 +7160,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.364Z",
+      "updated_at": "2026-09-21T16:47:15.364Z"
     },
     {
       "id": "rec-342",
@@ -7169,8 +7180,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-343",
@@ -7189,8 +7200,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-344",
@@ -7209,8 +7220,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-345",
@@ -7229,8 +7240,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-346",
@@ -7249,8 +7260,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-347",
@@ -7269,8 +7280,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-348",
@@ -7289,8 +7300,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-349",
@@ -7309,8 +7320,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-350",
@@ -7329,8 +7340,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-351",
@@ -7349,8 +7360,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-352",
@@ -7369,8 +7380,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-353",
@@ -7389,8 +7400,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-354",
@@ -7409,8 +7420,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-355",
@@ -7429,8 +7440,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-356",
@@ -7449,8 +7460,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-357",
@@ -7469,8 +7480,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-358",
@@ -7489,8 +7500,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-359",
@@ -7509,8 +7520,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-360",
@@ -7529,8 +7540,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-361",
@@ -7549,8 +7560,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-362",
@@ -7569,8 +7580,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-363",
@@ -7589,8 +7600,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-364",
@@ -7609,8 +7620,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-365",
@@ -7629,8 +7640,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-366",
@@ -7649,8 +7660,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-367",
@@ -7669,8 +7680,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-368",
@@ -7689,8 +7700,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-369",
@@ -7709,8 +7720,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-370",
@@ -7729,8 +7740,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-371",
@@ -7749,8 +7760,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-372",
@@ -7769,8 +7780,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-373",
@@ -7789,8 +7800,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-374",
@@ -7809,8 +7820,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-375",
@@ -7829,8 +7840,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-376",
@@ -7849,8 +7860,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-377",
@@ -7869,8 +7880,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-378",
@@ -7889,8 +7900,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-379",
@@ -7909,8 +7920,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-380",
@@ -7929,8 +7940,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-381",
@@ -7949,8 +7960,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-382",
@@ -7969,8 +7980,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-383",
@@ -7989,8 +8000,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-384",
@@ -8009,8 +8020,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-385",
@@ -8029,8 +8040,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-386",
@@ -8049,8 +8060,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-387",
@@ -8069,8 +8080,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-388",
@@ -8089,8 +8100,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-389",
@@ -8109,8 +8120,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Nhắc nhở học sinh sử dụng điện thoại trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-390",
@@ -8129,8 +8140,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Nhắc nhở học sinh sử dụng điện thoại trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-391",
@@ -8149,8 +8160,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Nhắc nhở học sinh sử dụng điện thoại trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-392",
@@ -8169,8 +8180,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Nhắc nhở học sinh sử dụng điện thoại trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-393",
@@ -8189,8 +8200,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-394",
@@ -8209,8 +8220,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-395",
@@ -8229,8 +8240,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-396",
@@ -8249,8 +8260,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-397",
@@ -8269,8 +8280,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-398",
@@ -8289,8 +8300,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-399",
@@ -8309,8 +8320,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-400",
@@ -8329,8 +8340,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-401",
@@ -8349,8 +8360,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-402",
@@ -8369,8 +8380,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-403",
@@ -8389,8 +8400,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-404",
@@ -8409,8 +8420,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-405",
@@ -8429,8 +8440,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-406",
@@ -8449,8 +8460,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-407",
@@ -8469,8 +8480,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-408",
@@ -8489,8 +8500,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-409",
@@ -8509,8 +8520,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-410",
@@ -8529,8 +8540,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-411",
@@ -8549,8 +8560,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-412",
@@ -8569,8 +8580,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-413",
@@ -8589,8 +8600,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-414",
@@ -8609,8 +8620,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-415",
@@ -8629,8 +8640,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-416",
@@ -8649,8 +8660,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-417",
@@ -8669,8 +8680,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-418",
@@ -8689,8 +8700,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-419",
@@ -8709,8 +8720,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-420",
@@ -8729,8 +8740,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-421",
@@ -8749,8 +8760,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-422",
@@ -8769,8 +8780,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-423",
@@ -8789,8 +8800,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-424",
@@ -8809,8 +8820,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-425",
@@ -8829,8 +8840,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-426",
@@ -8849,8 +8860,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-427",
@@ -8869,8 +8880,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-428",
@@ -8889,8 +8900,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-429",
@@ -8909,8 +8920,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-430",
@@ -8929,8 +8940,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-431",
@@ -8949,8 +8960,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-432",
@@ -8969,8 +8980,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-433",
@@ -8989,8 +9000,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-434",
@@ -9009,8 +9020,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-435",
@@ -9029,8 +9040,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-436",
@@ -9049,8 +9060,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-437",
@@ -9069,8 +9080,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-438",
@@ -9089,8 +9100,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-439",
@@ -9109,8 +9120,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-440",
@@ -9129,8 +9140,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-441",
@@ -9149,8 +9160,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-442",
@@ -9169,8 +9180,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-443",
@@ -9189,8 +9200,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-444",
@@ -9209,8 +9220,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-445",
@@ -9229,8 +9240,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-446",
@@ -9249,8 +9260,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-447",
@@ -9269,8 +9280,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-448",
@@ -9289,8 +9300,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-449",
@@ -9309,8 +9320,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-450",
@@ -9329,8 +9340,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-451",
@@ -9349,8 +9360,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-452",
@@ -9369,8 +9380,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-453",
@@ -9389,8 +9400,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-454",
@@ -9409,8 +9420,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-455",
@@ -9429,8 +9440,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-456",
@@ -9449,8 +9460,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-457",
@@ -9469,8 +9480,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kê lại bàn ghế ngay ngắn sau giờ học",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-458",
@@ -9489,8 +9500,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kê lại bàn ghế ngay ngắn sau giờ học",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-459",
@@ -9509,8 +9520,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kê lại bàn ghế ngay ngắn sau giờ học",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-460",
@@ -9529,8 +9540,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kê lại bàn ghế ngay ngắn sau giờ học",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-461",
@@ -9549,8 +9560,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-462",
@@ -9569,8 +9580,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp chú ý nghe giảng, phát biểu sôi nổi",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-463",
@@ -9589,8 +9600,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-464",
@@ -9609,8 +9620,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Một vài học sinh còn nói chuyện riêng",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-465",
@@ -9629,8 +9640,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-466",
@@ -9649,8 +9660,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-467",
@@ -9669,8 +9680,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vắng 1 học sinh có phép",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-468",
@@ -9689,8 +9700,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-469",
@@ -9709,8 +9720,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-470",
@@ -9729,8 +9740,8 @@ export const initialData: DatabaseData = {
       "classification": "Khá",
       "note": "Lớp chuẩn bị bài chưa đều, cần rút kinh nghiệm",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-471",
@@ -9749,8 +9760,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-472",
@@ -9769,8 +9780,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Nhắc nhở 2 học sinh mất trật tự trong giờ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-473",
@@ -9789,8 +9800,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-474",
@@ -9809,8 +9820,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-475",
@@ -9829,8 +9840,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Kiểm tra miệng đạt yêu cầu, cần tích cực hơn",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-476",
@@ -9849,8 +9860,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-477",
@@ -9869,8 +9880,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.672Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-478",
@@ -9889,8 +9900,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.672Z",
-      "updated_at": "2026-11-05T02:08:09.673Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-479",
@@ -9909,8 +9920,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Lớp học nghiêm túc, làm bài tập đầy đủ",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.673Z",
-      "updated_at": "2026-11-05T02:08:09.673Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     },
     {
       "id": "rec-480",
@@ -9929,8 +9940,8 @@ export const initialData: DatabaseData = {
       "classification": "Tốt",
       "note": "Vệ sinh cuối lớp chưa sạch, đã nhắc nhở trực nhật",
       "created_by": "system",
-      "created_at": "2026-11-05T02:08:09.673Z",
-      "updated_at": "2026-11-05T02:08:09.673Z"
+      "created_at": "2026-09-21T16:47:15.365Z",
+      "updated_at": "2026-09-21T16:47:15.365Z"
     }
   ],
   "school_years": [

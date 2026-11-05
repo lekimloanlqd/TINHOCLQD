@@ -220,6 +220,17 @@
       "status": "ACTIVE",
       "created_at": "2026-09-21T16:47:15.361Z",
       "updated_at": "2026-09-21T16:47:15.361Z"
+    },
+    {
+      "id": "10/5B",
+      "class_name": "10/5B",
+      "grade": 10,
+      "school_year": "2026-2027",
+      "homeroom_teacher": "Cô Hạnh",
+      "student_count": 42,
+      "status": "ACTIVE",
+      "created_at": "2026-11-05T15:57:09.657Z",
+      "updated_at": "2026-11-05T15:57:09.657Z"
     }
   ],
   "subjects": [
