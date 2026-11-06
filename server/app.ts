@@ -77,6 +77,23 @@ export function createApp() {
 
   app.use(express.json({ limit: '10mb' }));
 
+  // Normalize incoming URLs so server handles both /api/... and direct rewritten paths
+  app.use((req, _res, next) => {
+    if (!req.url.startsWith('/api') && (
+      req.url.startsWith('/auth') ||
+      req.url.startsWith('/records') ||
+      req.url.startsWith('/classes') ||
+      req.url.startsWith('/subjects') ||
+      req.url.startsWith('/settings') ||
+      req.url.startsWith('/users') ||
+      req.url.startsWith('/stats') ||
+      req.url.startsWith('/ai')
+    )) {
+      req.url = '/api' + req.url;
+    }
+    next();
+  });
+
   // --- 1. AUTH ROUTES ---
   app.post('/api/auth/login', (req, res) => {
     const { identifier, password } = req.body;
@@ -312,6 +329,7 @@ export function createApp() {
     }
 
     const created = db.addLessonRecord({
+      ...(req.body.id ? { id: req.body.id } : {}),
       school_year: currentYear,
       class_id,
       date,
@@ -333,8 +351,12 @@ export function createApp() {
   // UPDATE Lesson Record (with RLS check)
   app.put('/api/records/:id', requireAuth, (req, res) => {
     const user = (req as any).user as User;
-    const { id } = req.params;
-    const existing = db.getLessonRecordById(id);
+    const rawId = req.params.id;
+    const id = decodeURIComponent(rawId).trim();
+    let existing = db.getLessonRecordById(id);
+    if (!existing) {
+      existing = db.getLessonRecords().find((r) => r.id.toLowerCase() === id.toLowerCase());
+    }
     if (!existing) {
       return res.status(404).json({ error: 'Không tìm thấy tiết học trong Sổ đầu bài.' });
     }
@@ -348,7 +370,7 @@ export function createApp() {
       }
     }
 
-    const updated = db.updateLessonRecord(id, req.body);
+    const updated = db.updateLessonRecord(existing.id, req.body);
     res.json(updated);
   });
 

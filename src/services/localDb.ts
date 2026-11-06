@@ -111,7 +111,7 @@ class LocalDatabase {
   public syncSettings(incoming: SystemSettings): SystemSettings {
     this.reloadFromStorage();
     if (!incoming) return this.data.settings;
-    this.data.settings = { ...incoming, ...this.data.settings };
+    this.data.settings = { ...this.data.settings, ...incoming };
     this.saveData(this.data);
     return this.data.settings;
   }
@@ -265,20 +265,10 @@ class LocalDatabase {
     this.reloadFromStorage();
     if (!Array.isArray(incoming)) return this.data.classes;
     const map = new Map<string, ClassItem>();
+    // First keep all local classes (e.g. offline additions)
+    this.data.classes.forEach((c) => map.set(c.id, c));
+    // Server classes override matching local classes
     incoming.forEach((c) => map.set(c.id, c));
-    this.data.classes.forEach((c) => {
-      const inc = map.get(c.id);
-      if (!inc) {
-        // Class was added locally (like 10/5B), keep it!
-        map.set(c.id, c);
-      } else {
-        const localTime = new Date(c.updated_at || 0).getTime();
-        const incTime = new Date(inc.updated_at || 0).getTime();
-        if (localTime >= incTime) {
-          map.set(c.id, c);
-        }
-      }
-    });
     this.data.classes = Array.from(map.values());
     this.saveData(this.data);
     return this.data.classes;
@@ -341,12 +331,8 @@ class LocalDatabase {
     this.reloadFromStorage();
     if (!Array.isArray(incoming)) return this.data.subjects;
     const map = new Map<string, SubjectItem>();
+    this.data.subjects.forEach((s) => map.set(s.id, s));
     incoming.forEach((s) => map.set(s.id, s));
-    this.data.subjects.forEach((s) => {
-      if (!map.has(s.id)) {
-        map.set(s.id, s);
-      }
-    });
     this.data.subjects = Array.from(map.values());
     this.saveData(this.data);
     return this.data.subjects;
@@ -490,19 +476,10 @@ class LocalDatabase {
     this.reloadFromStorage();
     if (!Array.isArray(incoming)) return this.data.lesson_records;
     const map = new Map<string, LessonRecord>();
+    // First keep all existing local records (e.g. offline drafts)
+    this.data.lesson_records.forEach((r) => map.set(r.id, r));
+    // Server records override matching records
     incoming.forEach((r) => map.set(r.id, r));
-    this.data.lesson_records.forEach((r) => {
-      const inc = map.get(r.id);
-      if (!inc) {
-        map.set(r.id, r);
-      } else {
-        const localTime = new Date(r.updated_at || 0).getTime();
-        const incTime = new Date(inc.updated_at || 0).getTime();
-        if (localTime >= incTime) {
-          map.set(r.id, r);
-        }
-      }
-    });
     this.data.lesson_records = Array.from(map.values());
     this.saveData(this.data);
     return this.data.lesson_records;

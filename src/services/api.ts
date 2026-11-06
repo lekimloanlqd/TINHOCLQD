@@ -66,15 +66,22 @@ export const api = {
       });
       if (res?.token) {
         setStoredToken(res.token);
-        // Also ensure localDb has this user active
+        // Also ensure localDb has this user active and synced
         try { localDb.login(identifier, password); } catch (_) {}
       }
       return res;
     } catch (err: any) {
-      // Fallback to localDb
-      const localRes = localDb.login(identifier, password);
-      setStoredToken(localRes.token);
-      return localRes;
+      // Fallback to localDb for offline or static environments
+      try {
+        const localRes = localDb.login(identifier, password);
+        setStoredToken(localRes.token);
+        return localRes;
+      } catch (localErr: any) {
+        if (err.data?.error) {
+          throw new Error(err.data.error);
+        }
+        throw localErr;
+      }
     }
   },
 
@@ -127,28 +134,24 @@ export const api = {
   },
 
   async updateSettings(settings: Partial<SystemSettings>): Promise<SystemSettings> {
-    // 1. Immediately persist locally
-    const updatedLocal = localDb.updateSettings(settings);
-
-    // 2. Sync to server
     try {
-      await fetchWithAuth('/api/settings', {
+      const serverSettings = await fetchWithAuth('/api/settings', {
         method: 'PUT',
         body: JSON.stringify(settings),
       });
-    } catch (err) {
-      console.info('Settings saved locally; server sync deferred:', err);
+      if (serverSettings && serverSettings.current_school_year) {
+        return localDb.syncSettings(serverSettings);
+      }
+    } catch (err: any) {
+      console.info('Settings update on server deferred, saving locally:', err.message);
     }
 
-    return updatedLocal;
+    return localDb.updateSettings(settings);
   },
 
   // Classes
   async getClasses(): Promise<ClassItem[]> {
-    // 1. Load locally persisted classes
     const localClasses = localDb.getClasses();
-
-    // 2. Query server and smart-merge so user-added classes (like 10/5B) are NEVER erased
     try {
       const serverClasses = await fetchWithAuth('/api/classes');
       if (Array.isArray(serverClasses) && serverClasses.length > 0) {
@@ -160,53 +163,49 @@ export const api = {
   },
 
   async createClass(data: Partial<ClassItem>): Promise<ClassItem> {
-    // 1. Save IMMEDIATELY into localStorage so reload/reopen NEVER loses it
-    const saved = localDb.addClass(data);
-
-    // 2. Also save to server if running
     try {
-      await fetchWithAuth('/api/classes', {
+      const serverClass = await fetchWithAuth('/api/classes', {
         method: 'POST',
         body: JSON.stringify(data),
       });
+      if (serverClass && serverClass.id) {
+        return localDb.addClass(serverClass);
+      }
     } catch (err: any) {
-      console.info('Class saved locally; server sync deferred:', err.message);
+      console.info('Class saving to server deferred, storing locally:', err.message);
     }
 
-    return saved;
+    return localDb.addClass(data);
   },
 
   async updateClass(id: string, data: Partial<ClassItem>): Promise<ClassItem> {
-    // 1. Update IMMEDIATELY in localStorage
-    const updated = localDb.updateClass(id, data);
-
-    // 2. Also update on server if running
     try {
-      await fetchWithAuth(`/api/classes/${encodeURIComponent(id)}`, {
+      const serverClass = await fetchWithAuth(`/api/classes/${encodeURIComponent(id)}`, {
         method: 'PUT',
         body: JSON.stringify(data),
       });
+      if (serverClass && serverClass.id) {
+        return localDb.updateClass(serverClass.id, serverClass);
+      }
     } catch (err: any) {
-      console.info('Class updated locally; server sync deferred:', err.message);
+      console.info('Class update on server deferred, updating locally:', err.message);
     }
 
-    return updated;
+    return localDb.updateClass(id, data);
   },
 
   async deleteClass(id: string): Promise<{ message: string }> {
-    // 1. Delete IMMEDIATELY in localStorage
-    const res = localDb.deleteClass(id);
-
-    // 2. Also delete on server if running
     try {
-      await fetchWithAuth(`/api/classes/${encodeURIComponent(id)}`, {
+      const res = await fetchWithAuth(`/api/classes/${encodeURIComponent(id)}`, {
         method: 'DELETE',
       });
+      localDb.deleteClass(id);
+      return res;
     } catch (err: any) {
-      console.info('Class deleted locally; server sync deferred:', err.message);
+      console.info('Class delete on server deferred, deleting locally:', err.message);
     }
 
-    return res;
+    return localDb.deleteClass(id);
   },
 
   // Subjects
@@ -222,35 +221,40 @@ export const api = {
   },
 
   async createSubject(data: Partial<SubjectItem>): Promise<SubjectItem> {
-    const saved = localDb.addSubject(data);
     try {
-      await fetchWithAuth('/api/subjects', {
+      const serverSub = await fetchWithAuth('/api/subjects', {
         method: 'POST',
         body: JSON.stringify(data),
       });
+      if (serverSub && serverSub.id) {
+        return localDb.addSubject(serverSub);
+      }
     } catch (err: any) {}
-    return saved;
+    return localDb.addSubject(data);
   },
 
   async updateSubject(id: string, data: Partial<SubjectItem>): Promise<SubjectItem> {
-    const updated = localDb.updateSubject(id, data);
     try {
-      await fetchWithAuth(`/api/subjects/${encodeURIComponent(id)}`, {
+      const serverSub = await fetchWithAuth(`/api/subjects/${encodeURIComponent(id)}`, {
         method: 'PUT',
         body: JSON.stringify(data),
       });
+      if (serverSub && serverSub.id) {
+        return localDb.updateSubject(serverSub.id, serverSub);
+      }
     } catch (err: any) {}
-    return updated;
+    return localDb.updateSubject(id, data);
   },
 
   async deleteSubject(id: string): Promise<{ message: string }> {
-    const res = localDb.deleteSubject(id);
     try {
-      await fetchWithAuth(`/api/subjects/${encodeURIComponent(id)}`, {
+      const res = await fetchWithAuth(`/api/subjects/${encodeURIComponent(id)}`, {
         method: 'DELETE',
       });
+      localDb.deleteSubject(id);
+      return res;
     } catch (err: any) {}
-    return res;
+    return localDb.deleteSubject(id);
   },
 
   // Lesson Records
@@ -283,79 +287,95 @@ export const api = {
   async createRecord(data: any): Promise<LessonRecord> {
     const token = getStoredToken();
     const me = localDb.getMe(token);
-    const saved = localDb.addLessonRecord(data, me.user);
+    if (!data.created_by && me.user) {
+      data.created_by = me.user.full_name;
+    }
 
     try {
-      await fetchWithAuth('/api/records', {
+      const serverRecord = await fetchWithAuth('/api/records', {
         method: 'POST',
         body: JSON.stringify(data),
       });
+      if (serverRecord && serverRecord.id) {
+        return localDb.addLessonRecord(serverRecord, me.user);
+      }
     } catch (err: any) {
-      console.info('Record saved locally; server sync deferred:', err.message);
+      console.info('Record saving to server deferred, storing locally:', err.message);
     }
 
-    return saved;
+    return localDb.addLessonRecord(data, me.user);
   },
 
   async updateRecord(id: string, data: Partial<LessonRecord>): Promise<LessonRecord> {
-    const updated = localDb.updateLessonRecord(id, data);
-
     try {
-      await fetchWithAuth(`/api/records/${encodeURIComponent(id)}`, {
+      const serverRecord = await fetchWithAuth(`/api/records/${encodeURIComponent(id)}`, {
         method: 'PUT',
         body: JSON.stringify(data),
       });
+      if (serverRecord && serverRecord.id) {
+        return localDb.updateLessonRecord(serverRecord.id, serverRecord);
+      }
     } catch (err: any) {
-      console.info('Record updated locally; server sync deferred:', err.message);
+      console.info('Record updating on server deferred, storing locally:', err.message);
     }
 
-    return updated;
+    return localDb.updateLessonRecord(id, data);
   },
 
   async deleteRecord(id: string): Promise<{ success?: boolean; message: string }> {
-    const res = localDb.deleteLessonRecord(id);
-
     try {
-      await fetchWithAuth(`/api/records/${encodeURIComponent(id)}`, {
+      const res = await fetchWithAuth(`/api/records/${encodeURIComponent(id)}`, {
         method: 'DELETE',
       });
+      localDb.deleteLessonRecord(id);
+      return res;
     } catch (err: any) {
-      console.info('Record deleted locally; server sync deferred:', err.message);
+      console.info('Record delete on server deferred, deleting locally:', err.message);
     }
 
-    return res;
+    return localDb.deleteLessonRecord(id);
   },
 
   async clearAllRecordsForYear(
     schoolYear?: string
   ): Promise<{ success: boolean; message: string; deletedCount: number; school_year: string }> {
-    const res = localDb.clearAllRecordsForYear(schoolYear);
-
     try {
       const params = new URLSearchParams();
       if (schoolYear) params.set('school_year', schoolYear);
-      await fetchWithAuth(`/api/records/all/clear-year?${params.toString()}`, {
+      const serverRes = await fetchWithAuth(`/api/records/all/clear-year?${params.toString()}`, {
         method: 'DELETE',
       });
-    } catch (err: any) {}
+      localDb.clearAllRecordsForYear(schoolYear);
+      return serverRes;
+    } catch (err: any) {
+      console.info('Clear year on server deferred, clearing locally:', err.message);
+    }
 
-    return res;
+    return localDb.clearAllRecordsForYear(schoolYear);
   },
 
   async batchImportRecords(
     records: any[],
     onDuplicateAction: 'skip' | 'update' | 'cancel'
   ): Promise<{ success: boolean; message: string; stats: any }> {
-    const res = localDb.batchImportRecords(records, onDuplicateAction);
-
     try {
-      await fetchWithAuth('/api/records/batch-import', {
+      const serverRes = await fetchWithAuth('/api/records/batch-import', {
         method: 'POST',
         body: JSON.stringify({ records, onDuplicateAction }),
       });
-    } catch (err: any) {}
+      // Synchronize all updated records into localDb
+      try {
+        const freshRecs = await fetchWithAuth('/api/records');
+        if (Array.isArray(freshRecs)) {
+          localDb.syncRecords(freshRecs);
+        }
+      } catch (_) {}
+      return serverRes;
+    } catch (err: any) {
+      console.info('Server batch-import failed, falling back to localDb:', err.message);
+    }
 
-    return res;
+    return localDb.batchImportRecords(records, onDuplicateAction);
   },
 
   // Users (Admin only)
@@ -371,25 +391,29 @@ export const api = {
   },
 
   async createUser(data: any): Promise<User> {
-    const saved = localDb.addUser(data);
     try {
-      await fetchWithAuth('/api/users', {
+      const serverUser = await fetchWithAuth('/api/users', {
         method: 'POST',
         body: JSON.stringify(data),
       });
+      if (serverUser && serverUser.id) {
+        return localDb.addUser(serverUser);
+      }
     } catch (err: any) {}
-    return saved;
+    return localDb.addUser(data);
   },
 
   async updateUser(id: string, data: any): Promise<User> {
-    const updated = localDb.updateUser(id, data);
     try {
-      await fetchWithAuth(`/api/users/${encodeURIComponent(id)}`, {
+      const serverUser = await fetchWithAuth(`/api/users/${encodeURIComponent(id)}`, {
         method: 'PUT',
         body: JSON.stringify(data),
       });
+      if (serverUser && serverUser.id) {
+        return localDb.updateUser(serverUser.id, serverUser);
+      }
     } catch (err: any) {}
-    return updated;
+    return localDb.updateUser(id, data);
   },
 
   async resetPassword(id: string, newPassword?: string): Promise<{ message: string }> {

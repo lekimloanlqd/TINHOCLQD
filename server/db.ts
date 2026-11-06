@@ -392,9 +392,24 @@ export function getInitialData(): DatabaseData {
 
 class Database {
   private data: DatabaseData;
+  private lastMtime: number = 0;
 
   constructor() {
     this.data = this.loadData();
+  }
+
+  public checkAndReload(): void {
+    try {
+      if (fs.existsSync(DB_FILE)) {
+        const stat = fs.statSync(DB_FILE);
+        if (stat.mtimeMs > this.lastMtime) {
+          const fresh = this.loadData();
+          this.data = fresh;
+        }
+      }
+    } catch (e) {
+      console.warn('checkAndReload failed:', e);
+    }
   }
 
   private loadData(): DatabaseData {
@@ -407,6 +422,9 @@ class Database {
         const raw = fs.readFileSync(DB_FILE, 'utf-8');
         const parsed = JSON.parse(raw);
         if (parsed.users && parsed.classes && parsed.lesson_records) {
+          try {
+            this.lastMtime = fs.statSync(DB_FILE).mtimeMs;
+          } catch (_) {}
           return parsed;
         }
       }
@@ -436,6 +454,9 @@ class Database {
         fs.mkdirSync(DATA_DIR, { recursive: true });
       }
       fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2), 'utf-8');
+      try {
+        this.lastMtime = fs.statSync(DB_FILE).mtimeMs;
+      } catch (_) {}
     } catch (err) {
       console.error('Error saving database:', err);
     }
@@ -454,63 +475,79 @@ class Database {
 
   // Getters
   public getUsers(): User[] {
+    this.checkAndReload();
     return this.data.users;
   }
 
   public getUserById(id: string): User | undefined {
+    this.checkAndReload();
     return this.data.users.find((u) => u.id === id);
   }
 
   public getUserByEmailOrPhone(identifier: string): User | undefined {
+    this.checkAndReload();
     const clean = identifier.trim().toLowerCase();
     return this.data.users.find(
       (u) =>
         u.email.toLowerCase() === clean ||
         u.phone === identifier.trim() ||
-        (clean === 'admin' && u.email.toLowerCase() === 'admin')
+        (clean === 'admin' && (u.email.toLowerCase() === 'admin' || u.role === 'ADMIN'))
     );
   }
 
   public getClasses(): ClassItem[] {
+    this.checkAndReload();
     return this.data.classes;
   }
 
   public getClassById(id: string): ClassItem | undefined {
-    return this.data.classes.find((c) => c.id === id);
+    this.checkAndReload();
+    const clean = (id || '').trim().toLowerCase();
+    return this.data.classes.find((c) => c.id.toLowerCase() === clean || c.class_name.toLowerCase() === clean);
   }
 
   public getSubjects(): SubjectItem[] {
+    this.checkAndReload();
     return this.data.subjects;
   }
 
   public getSubjectById(id: string): SubjectItem | undefined {
-    return this.data.subjects.find((s) => s.id === id);
+    this.checkAndReload();
+    const clean = (id || '').trim().toUpperCase();
+    return this.data.subjects.find((s) => s.id.toUpperCase() === clean || s.subject_code.toUpperCase() === clean);
   }
 
   public getLessonRecords(): LessonRecord[] {
+    this.checkAndReload();
     return this.data.lesson_records;
   }
 
   public getLessonRecordById(id: string): LessonRecord | undefined {
-    return this.data.lesson_records.find((r) => r.id === id);
+    this.checkAndReload();
+    const clean = (id || '').trim().toLowerCase();
+    return this.data.lesson_records.find((r) => r.id.toLowerCase() === clean);
   }
 
   public getSettings(): SystemSettings {
+    this.checkAndReload();
     return this.data.settings;
   }
 
   public getSchoolYears(): SchoolYear[] {
+    this.checkAndReload();
     return this.data.school_years;
   }
 
   // Mutations
   public updateSettings(settings: Partial<SystemSettings>): SystemSettings {
+    this.checkAndReload();
     this.data.settings = { ...this.data.settings, ...settings };
     this.save();
     return this.data.settings;
   }
 
   public addUser(user: Omit<User, 'id' | 'created_at' | 'updated_at'>): User {
+    this.checkAndReload();
     const newUser: User = {
       ...user,
       id: `usr-${Date.now()}-${Math.random().toString(36).substring(2, 7)}`,
@@ -533,6 +570,7 @@ class Database {
   }
 
   public updateUser(id: string, updates: Partial<User>): User | null {
+    this.checkAndReload();
     const index = this.data.users.findIndex((u) => u.id === id);
     if (index === -1) return null;
 
@@ -558,6 +596,17 @@ class Database {
   }
 
   public addClass(cls: Omit<ClassItem, 'created_at' | 'updated_at'>): ClassItem {
+    this.checkAndReload();
+    const existingIndex = this.data.classes.findIndex((c) => c.id.toLowerCase() === cls.id.toLowerCase());
+    if (existingIndex >= 0) {
+      this.data.classes[existingIndex] = {
+        ...this.data.classes[existingIndex],
+        ...cls,
+        updated_at: new Date().toISOString(),
+      };
+      this.save();
+      return this.data.classes[existingIndex];
+    }
     const newClass: ClassItem = {
       ...cls,
       created_at: new Date().toISOString(),
@@ -569,7 +618,9 @@ class Database {
   }
 
   public updateClass(id: string, updates: Partial<ClassItem>): ClassItem | null {
-    const index = this.data.classes.findIndex((c) => c.id === id);
+    this.checkAndReload();
+    const clean = id.trim().toLowerCase();
+    const index = this.data.classes.findIndex((c) => c.id.toLowerCase() === clean || c.class_name.toLowerCase() === clean);
     if (index === -1) return null;
     this.data.classes[index] = {
       ...this.data.classes[index],
@@ -581,8 +632,10 @@ class Database {
   }
 
   public deleteClass(id: string): boolean {
+    this.checkAndReload();
+    const clean = id.trim().toLowerCase();
     const initialLen = this.data.classes.length;
-    this.data.classes = this.data.classes.filter((c) => c.id !== id);
+    this.data.classes = this.data.classes.filter((c) => c.id.toLowerCase() !== clean && c.class_name.toLowerCase() !== clean);
     if (this.data.classes.length !== initialLen) {
       this.save();
       return true;
@@ -591,6 +644,7 @@ class Database {
   }
 
   public addSubject(sub: Omit<SubjectItem, 'created_at' | 'updated_at'>): SubjectItem {
+    this.checkAndReload();
     const newSubject: SubjectItem = {
       ...sub,
       created_at: new Date().toISOString(),
@@ -602,7 +656,9 @@ class Database {
   }
 
   public updateSubject(id: string, updates: Partial<SubjectItem>): SubjectItem | null {
-    const index = this.data.subjects.findIndex((s) => s.id === id);
+    this.checkAndReload();
+    const clean = id.trim().toUpperCase();
+    const index = this.data.subjects.findIndex((s) => s.id.toUpperCase() === clean || s.subject_code.toUpperCase() === clean);
     if (index === -1) return null;
     this.data.subjects[index] = {
       ...this.data.subjects[index],
@@ -613,7 +669,8 @@ class Database {
     return this.data.subjects[index];
   }
 
-  public addLessonRecord(record: Omit<LessonRecord, 'id' | 'total_score' | 'classification' | 'created_at' | 'updated_at'>): LessonRecord {
+  public addLessonRecord(record: Omit<LessonRecord, 'id' | 'total_score' | 'classification' | 'created_at' | 'updated_at'> & { id?: string }): LessonRecord {
+    this.checkAndReload();
     const { total_score, classification } = computeScoreAndClassification(
       record.study_score,
       record.discipline_score,
@@ -621,9 +678,14 @@ class Database {
       record.attendance_score
     );
 
+    // If client provided a unique id, preserve it for parity
+    const chosenId = (record.id && !this.data.lesson_records.some((r) => r.id === record.id))
+      ? record.id
+      : `rec-${Date.now()}-${Math.random().toString(36).substring(2, 7)}`;
+
     const newRecord: LessonRecord = {
       ...record,
-      id: `rec-${Date.now()}-${Math.random().toString(36).substring(2, 7)}`,
+      id: chosenId,
       total_score,
       classification,
       created_at: new Date().toISOString(),
@@ -636,7 +698,9 @@ class Database {
   }
 
   public updateLessonRecord(id: string, updates: Partial<LessonRecord>): LessonRecord | null {
-    const index = this.data.lesson_records.findIndex((r) => r.id === id);
+    this.checkAndReload();
+    const clean = id.trim().toLowerCase();
+    const index = this.data.lesson_records.findIndex((r) => r.id.toLowerCase() === clean);
     if (index === -1) return null;
 
     const current = this.data.lesson_records[index];
@@ -664,8 +728,10 @@ class Database {
   }
 
   public deleteLessonRecord(id: string): boolean {
+    this.checkAndReload();
+    const clean = id.trim().toLowerCase();
     const initialLen = this.data.lesson_records.length;
-    this.data.lesson_records = this.data.lesson_records.filter((r) => r.id !== id);
+    this.data.lesson_records = this.data.lesson_records.filter((r) => r.id.toLowerCase() !== clean);
     if (this.data.lesson_records.length !== initialLen) {
       this.save();
       return true;
@@ -674,6 +740,7 @@ class Database {
   }
 
   public clearLessonRecordsBySchoolYear(schoolYear?: string): number {
+    this.checkAndReload();
     const targetYear = (schoolYear || this.data.settings.current_school_year || '').trim();
     const initialLen = this.data.lesson_records.length;
     if (!targetYear || targetYear === 'ALL') {
@@ -688,6 +755,7 @@ class Database {
 
   // Duplicate check: Class + Date + Period + Subject
   public findDuplicateRecord(class_id: string, date: string, period: number, subject_id: string, excludeId?: string): LessonRecord | undefined {
+    this.checkAndReload();
     return this.data.lesson_records.find(
       (r) =>
         r.class_id === class_id &&
