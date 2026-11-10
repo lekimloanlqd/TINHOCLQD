@@ -530,4 +530,43 @@ ${stats.top3.map((c, i) => `${i + 1}. **Lớp ${c.class_name}** - Điểm TB: ${
 2. Ban Thi đua Đoàn trường phối hợp GVCN các lớp có giờ Chưa đạt để chấn chỉnh kịp thời.`,
     };
   },
+
+  async getStatus(): Promise<{
+    status: string;
+    storage: 'supabase' | 'file';
+    supabaseConfigured: boolean;
+    totalClasses: number;
+    totalRecords: number;
+    currentSchoolYear: string;
+  }> {
+    try {
+      const res = await fetchWithAuth('/api/status');
+      if (res && res.status) return res;
+    } catch (_) {}
+    return {
+      status: 'ok',
+      storage: 'file',
+      supabaseConfigured: false,
+      totalClasses: localDb.getClasses().length,
+      totalRecords: localDb.getLessonRecords().length,
+      currentSchoolYear: localDb.getSettings().current_school_year,
+    };
+  },
+
+  async refreshCloudSync(): Promise<{ success: boolean; message: string; storage: string }> {
+    try {
+      const res = await fetchWithAuth('/api/sync/refresh', { method: 'POST' });
+      const [classes, records, settings] = await Promise.all([
+        fetchWithAuth('/api/classes').catch(() => null),
+        fetchWithAuth('/api/records').catch(() => null),
+        fetchWithAuth('/api/settings').catch(() => null),
+      ]);
+      if (Array.isArray(classes)) localDb.syncClasses(classes);
+      if (Array.isArray(records)) localDb.syncRecords(records);
+      if (settings) localDb.syncSettings(settings);
+      return res;
+    } catch (err: any) {
+      return { success: false, message: err.message || 'Không thể đồng bộ', storage: 'file' };
+    }
+  },
 };

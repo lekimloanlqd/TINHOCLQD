@@ -77,8 +77,24 @@ export function createApp() {
 
   app.use(express.json({ limit: '10mb' }));
 
+  // CORS middleware for Vercel preview & production deployments
+  app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+    if (req.method === 'OPTIONS') {
+      return res.sendStatus(200);
+    }
+    next();
+  });
+
   // Normalize incoming URLs so server handles both /api/... and direct rewritten paths
   app.use((req, _res, next) => {
+    const forwardedUri = (req.headers['x-forwarded-uri'] as string) || (req.headers['x-vercel-matched-path'] as string);
+    if (forwardedUri && forwardedUri.startsWith('/api') && req.url === '/') {
+      req.url = forwardedUri;
+    }
+
     if (!req.url.startsWith('/api') && (
       req.url.startsWith('/auth') ||
       req.url.startsWith('/records') ||
@@ -87,11 +103,53 @@ export function createApp() {
       req.url.startsWith('/settings') ||
       req.url.startsWith('/users') ||
       req.url.startsWith('/stats') ||
-      req.url.startsWith('/ai')
+      req.url.startsWith('/ai') ||
+      req.url.startsWith('/status') ||
+      req.url.startsWith('/sync')
     )) {
       req.url = '/api' + req.url;
     }
     next();
+  });
+
+  // API Root & Health Check
+  app.get('/api', (req, res) => {
+    res.json({
+      status: 'ok',
+      message: 'SMART CLASSBOOK AI API Server is running',
+      storage: db.getStorageType(),
+      supabaseConfigured: db.getStorageType() === 'supabase',
+      version: '1.0.0',
+    });
+  });
+
+  // System & Database Status Route
+  app.get('/api/status', (req, res) => {
+    res.json({
+      status: 'ok',
+      storage: db.getStorageType(),
+      supabaseConfigured: db.getStorageType() === 'supabase',
+      totalClasses: db.getClasses().length,
+      totalSubjects: db.getSubjects().length,
+      totalRecords: db.getLessonRecords().length,
+      totalUsers: db.getUsers().length,
+      currentSchoolYear: db.getSettings().current_school_year,
+      timestamp: new Date().toISOString(),
+    });
+  });
+
+  // Cloud Database Sync Trigger
+  app.post('/api/sync/refresh', async (req, res) => {
+    const success = await db.refreshFromCloud();
+    res.json({
+      success,
+      storage: db.getStorageType(),
+      message: success ? 'Đã tải dữ liệu mới nhất từ Supabase Cloud Database.' : 'Đã nạp dữ liệu cơ sở dữ liệu hệ thống.',
+      stats: {
+        totalClasses: db.getClasses().length,
+        totalRecords: db.getLessonRecords().length,
+      },
+    });
   });
 
   // --- 1. AUTH ROUTES ---

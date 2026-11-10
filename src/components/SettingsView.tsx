@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useSettings } from '../contexts/SettingsContext.tsx';
 import { SystemSettings } from '../types.ts';
-import { Settings, Save, CheckCircle2, AlertCircle, Sparkles } from 'lucide-react';
+import { Settings, Save, CheckCircle2, AlertCircle, Sparkles, Cloud, Database, RefreshCw, Server, ExternalLink } from 'lucide-react';
+import { api } from '../services/api.ts';
 
 export const SettingsView: React.FC = () => {
   const { settings: globalSettings, updateSettings } = useSettings();
@@ -9,6 +10,8 @@ export const SettingsView: React.FC = () => {
   const [loading, setLoading] = useState(!globalSettings);
   const [saving, setSaving] = useState(false);
   const [feedback, setFeedback] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
+  const [dbStatus, setDbStatus] = useState<any>(null);
+  const [syncingCloud, setSyncingCloud] = useState(false);
 
   useEffect(() => {
     if (globalSettings) {
@@ -16,6 +19,30 @@ export const SettingsView: React.FC = () => {
       setLoading(false);
     }
   }, [globalSettings]);
+
+  useEffect(() => {
+    api.getStatus().then(setDbStatus).catch(() => {});
+  }, []);
+
+  const handleSyncCloud = async () => {
+    try {
+      setSyncingCloud(true);
+      const res = await api.refreshCloudSync();
+      const status = await api.getStatus();
+      setDbStatus(status);
+      setFeedback({
+        type: 'success',
+        message: res.message || 'Đồng bộ cơ sở dữ liệu thành công!',
+      });
+    } catch (err: any) {
+      setFeedback({
+        type: 'error',
+        message: err.message || 'Không thể đồng bộ dữ liệu lúc này.',
+      });
+    } finally {
+      setSyncingCloud(false);
+    }
+  };
 
   const handleSave = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -265,6 +292,96 @@ export const SettingsView: React.FC = () => {
                 className="w-full px-3 py-2 border border-slate-200 rounded-xl text-center font-bold text-amber-700"
               />
             </div>
+          </div>
+        </div>
+
+        {/* Database & Cloud Synchronization */}
+        <div className="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-xs space-y-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-3">
+            <div>
+              <h3 className="text-xs font-bold uppercase tracking-wider text-blue-700 flex items-center gap-2">
+                <Database className="w-4 h-4 text-blue-600" />
+                3. CƠ SỞ DỮ LIỆU & ĐỒNG BỘ ĐÁM MÂY (SUPABASE / POSTGRESQL)
+              </h3>
+              <p className="text-xs text-slate-500 mt-0.5">
+                Đảm bảo dữ liệu lưu trữ vĩnh viễn, đồng bộ đa thiết bị khi triển khai trên Vercel
+              </p>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <span
+                className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold ${
+                  dbStatus?.storage === 'supabase'
+                    ? 'bg-emerald-50 text-emerald-800 border border-emerald-200'
+                    : 'bg-amber-50 text-amber-800 border border-amber-200'
+                }`}
+              >
+                <span
+                  className={`w-2 h-2 rounded-full ${
+                    dbStatus?.storage === 'supabase' ? 'bg-emerald-500 animate-pulse' : 'bg-amber-500'
+                  }`}
+                />
+                {dbStatus?.storage === 'supabase' ? 'Supabase Cloud (PostgreSQL)' : 'Lưu trữ tệp / Bộ nhớ tạm (Local)'}
+              </span>
+
+              <button
+                type="button"
+                onClick={handleSyncCloud}
+                disabled={syncingCloud}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-medium rounded-lg transition-colors cursor-pointer disabled:opacity-50"
+                title="Làm mới và đồng bộ lại dữ liệu từ cơ sở dữ liệu đám mây"
+              >
+                <RefreshCw className={`w-3.5 h-3.5 ${syncingCloud ? 'animate-spin text-blue-600' : ''}`} />
+                <span>{syncingCloud ? 'Đang đồng bộ...' : 'Đồng bộ ngay'}</span>
+              </button>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+            <div className="p-3 bg-slate-50 rounded-xl border border-slate-200/60">
+              <div className="text-slate-500 text-[11px]">Động cơ lưu trữ</div>
+              <div className="font-bold text-slate-800 text-sm mt-0.5 capitalize">
+                {dbStatus?.storage === 'supabase' ? 'Supabase Cloud' : 'Local File JSON'}
+              </div>
+            </div>
+            <div className="p-3 bg-slate-50 rounded-xl border border-slate-200/60">
+              <div className="text-slate-500 text-[11px]">Tổng số lớp</div>
+              <div className="font-bold text-blue-700 text-sm mt-0.5">
+                {dbStatus?.totalClasses ?? '...'} lớp học
+              </div>
+            </div>
+            <div className="p-3 bg-slate-50 rounded-xl border border-slate-200/60">
+              <div className="text-slate-500 text-[11px]">Bản ghi sổ đầu bài</div>
+              <div className="font-bold text-emerald-700 text-sm mt-0.5">
+                {dbStatus?.totalRecords ?? '...'} tiết học
+              </div>
+            </div>
+            <div className="p-3 bg-slate-50 rounded-xl border border-slate-200/60">
+              <div className="text-slate-500 text-[11px]">Tài khoản hệ thống</div>
+              <div className="font-bold text-purple-700 text-sm mt-0.5">
+                {dbStatus?.totalUsers ?? '5'} tài khoản
+              </div>
+            </div>
+          </div>
+
+          <div className="p-3.5 bg-blue-50/60 rounded-xl border border-blue-100 text-xs text-blue-900 space-y-1.5">
+            <div className="font-semibold flex items-center gap-1.5 text-blue-800">
+              <Cloud className="w-4 h-4 text-blue-600" />
+              Hướng dẫn cấu hình Vercel để lưu trữ dữ liệu vĩnh viễn:
+            </div>
+            <p className="text-slate-600 leading-relaxed">
+              1. Tạo project trên <strong>Supabase.com</strong> và chạy nội dung file <code className="bg-white px-1.5 py-0.5 rounded text-blue-700 border border-blue-200 font-mono">supabase-schema.sql</code> trong mục <strong>SQL Editor</strong>.
+            </p>
+            <p className="text-slate-600 leading-relaxed">
+              2. Trên <strong>Vercel</strong> &gt; Project Settings &gt; <strong>Environment Variables</strong>, thêm 2 biến:
+              <br />
+              • <code className="font-mono font-semibold text-slate-800 bg-white px-1 rounded">SUPABASE_URL</code> (hoặc <code className="font-mono text-slate-800 bg-white px-1 rounded">VITE_SUPABASE_URL</code>)
+              <br />
+              • <code className="font-mono font-semibold text-slate-800 bg-white px-1 rounded">SUPABASE_ANON_KEY</code> (hoặc <code className="font-mono text-slate-800 bg-white px-1 rounded">VITE_SUPABASE_ANON_KEY</code>)
+            </p>
+            <p className="text-emerald-700 font-medium">
+              ✓ Khi kết nối, hệ thống sẽ tự động đồng bộ tất cả lớp, môn học, tiết học và người dùng giữa mọi thiết bị.
+            </p>
           </div>
         </div>
 
