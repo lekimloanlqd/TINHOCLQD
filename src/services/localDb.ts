@@ -565,6 +565,40 @@ class LocalDatabase {
     return safe as User;
   }
 
+  public deleteUser(id: string): boolean {
+    this.reloadFromStorage();
+    const idx = this.data.users.findIndex((u) => u.id === id);
+    if (idx === -1) return false;
+    this.data.users.splice(idx, 1);
+    this.saveData(this.data);
+    return true;
+  }
+
+  public syncUsers(incoming: User[]): User[] {
+    if (!Array.isArray(incoming) || incoming.length === 0) return this.data.users;
+    this.reloadFromStorage();
+    const map = new Map<string, User>();
+    this.data.users.forEach((u) => map.set(u.id, u));
+    incoming.forEach((u) => {
+      const existing = map.get(u.id);
+      if (existing) {
+        map.set(u.id, {
+          ...existing,
+          ...u,
+          password: existing.password || u.password || '123456',
+        });
+      } else {
+        map.set(u.id, {
+          ...u,
+          password: u.password || '123456',
+        });
+      }
+    });
+    this.data.users = Array.from(map.values());
+    this.saveData(this.data);
+    return this.data.users;
+  }
+
   public resetPassword(id: string, newPassword?: string): { message: string } {
     this.reloadFromStorage();
     const user = this.getUserById(id);

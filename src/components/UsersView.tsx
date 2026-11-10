@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { api } from '../services/api.ts';
 import { User, Role, ClassItem } from '../types.ts';
-import { UserCheck, Plus, Edit2, KeyRound, Lock, Unlock, Search, Shield, Users, GraduationCap, X, CheckCircle2, AlertCircle } from 'lucide-react';
+import { UserCheck, Plus, Edit2, KeyRound, Lock, Unlock, Search, Shield, Users, GraduationCap, X, CheckCircle2, AlertCircle, Trash2 } from 'lucide-react';
 
 export const UsersView: React.FC = () => {
   const [users, setUsers] = useState<User[]>([]);
@@ -88,9 +88,26 @@ export const UsersView: React.FC = () => {
         type: 'success',
         message: `Đã ${newStatus === 'LOCKED' ? 'khóa' : 'mở khóa'} tài khoản ${u.full_name}`,
       });
-      loadData();
+      await loadData();
     } catch (err: any) {
       setFeedback({ type: 'error', message: err.message || 'Lỗi cập nhật trạng thái.' });
+    }
+  };
+
+  const handleDeleteUser = async (u: User) => {
+    if (u.id === 'usr-admin' || u.email.toLowerCase() === 'admin') {
+      setFeedback({ type: 'error', message: 'Không thể xóa tài khoản Quản trị viên mặc định (Admin).' });
+      return;
+    }
+    const confirmed = window.confirm(`Bạn có chắc chắn muốn xóa vĩnh viễn tài khoản ${u.full_name} (${u.email})?`);
+    if (!confirmed) return;
+
+    try {
+      await api.deleteUser(u.id);
+      setFeedback({ type: 'success', message: `Đã xóa tài khoản ${u.full_name} thành công.` });
+      await loadData();
+    } catch (err: any) {
+      setFeedback({ type: 'error', message: err.message || 'Lỗi khi xóa tài khoản người dùng.' });
     }
   };
 
@@ -105,7 +122,7 @@ export const UsersView: React.FC = () => {
         setFeedback({ type: 'success', message: 'Tạo tài khoản người dùng mới thành công!' });
       }
       setShowModal(false);
-      loadData();
+      await loadData();
     } catch (err: any) {
       setFeedback({ type: 'error', message: err.message || 'Lỗi khi lưu người dùng.' });
     }
@@ -271,6 +288,15 @@ export const UsersView: React.FC = () => {
                         >
                           <Edit2 className="w-3.5 h-3.5" />
                         </button>
+                        {u.id !== 'usr-admin' && u.email.toLowerCase() !== 'admin' && (
+                          <button
+                            onClick={() => handleDeleteUser(u)}
+                            className="p-1.5 text-slate-500 hover:text-rose-600 hover:bg-rose-50 rounded-lg transition-colors cursor-pointer"
+                            title="Xóa tài khoản"
+                          >
+                            <Trash2 className="w-3.5 h-3.5 text-rose-500" />
+                          </button>
+                        )}
                       </div>
                     </td>
                   </tr>
@@ -372,20 +398,19 @@ export const UsersView: React.FC = () => {
                 </div>
               )}
 
-              {!editingUser && (
-                <div>
-                  <label className="block text-xs font-semibold text-slate-700 mb-1">
-                    Mật khẩu ban đầu <span className="text-rose-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    value={formData.password}
-                    onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-                    className="w-full px-3 py-2 text-xs border border-slate-200 rounded-xl font-mono"
-                    required
-                  />
-                </div>
-              )}
+              <div>
+                <label className="block text-xs font-semibold text-slate-700 mb-1">
+                  {editingUser ? 'Mật khẩu mới (Để trống nếu giữ nguyên)' : 'Mật khẩu ban đầu'} {!editingUser && <span className="text-rose-500">*</span>}
+                </label>
+                <input
+                  type="text"
+                  value={formData.password}
+                  onChange={(e) => setFormData({ ...formData, password: e.target.value })}
+                  placeholder={editingUser ? 'Nhập mật khẩu mới nếu muốn đổi' : '123456'}
+                  className="w-full px-3 py-2 text-xs border border-slate-200 rounded-xl font-mono"
+                  required={!editingUser}
+                />
+              </div>
 
               <div className="pt-3 border-t border-slate-100 flex justify-end gap-2">
                 <button

@@ -380,14 +380,14 @@ export const api = {
 
   // Users (Admin only)
   async getUsers(): Promise<User[]> {
-    const localUsers = localDb.getUsers();
     try {
       const serverUsers = await fetchWithAuth('/api/users');
       if (Array.isArray(serverUsers) && serverUsers.length > 0) {
+        localDb.syncUsers(serverUsers);
         return serverUsers;
       }
     } catch (err) {}
-    return localUsers;
+    return localDb.getUsers();
   },
 
   async createUser(data: any): Promise<User> {
@@ -399,7 +399,11 @@ export const api = {
       if (serverUser && serverUser.id) {
         return localDb.addUser(serverUser);
       }
-    } catch (err: any) {}
+    } catch (err: any) {
+      if (err.data?.error || err.status === 400 || err.status === 401 || err.status === 403) {
+        throw err;
+      }
+    }
     return localDb.addUser(data);
   },
 
@@ -412,8 +416,25 @@ export const api = {
       if (serverUser && serverUser.id) {
         return localDb.updateUser(serverUser.id, serverUser);
       }
-    } catch (err: any) {}
+    } catch (err: any) {
+      if (err.data?.error || err.status === 400 || err.status === 401 || err.status === 403) {
+        throw err;
+      }
+    }
     return localDb.updateUser(id, data);
+  },
+
+  async deleteUser(id: string): Promise<boolean> {
+    try {
+      await fetchWithAuth(`/api/users/${encodeURIComponent(id)}`, {
+        method: 'DELETE',
+      });
+    } catch (err: any) {
+      if (err.data?.error || err.status === 400 || err.status === 401 || err.status === 403) {
+        throw err;
+      }
+    }
+    return localDb.deleteUser(id);
   },
 
   async resetPassword(id: string, newPassword?: string): Promise<{ message: string }> {
@@ -556,17 +577,33 @@ ${stats.top3.map((c, i) => `${i + 1}. **Lớp ${c.class_name}** - Điểm TB: ${
   async refreshCloudSync(): Promise<{ success: boolean; message: string; storage: string }> {
     try {
       const res = await fetchWithAuth('/api/sync/refresh', { method: 'POST' });
-      const [classes, records, settings] = await Promise.all([
+      const [classes, subjects, records, settings, users] = await Promise.all([
         fetchWithAuth('/api/classes').catch(() => null),
+        fetchWithAuth('/api/subjects').catch(() => null),
         fetchWithAuth('/api/records').catch(() => null),
         fetchWithAuth('/api/settings').catch(() => null),
+        fetchWithAuth('/api/users').catch(() => null),
       ]);
       if (Array.isArray(classes)) localDb.syncClasses(classes);
+      if (Array.isArray(subjects)) localDb.syncSubjects(subjects);
       if (Array.isArray(records)) localDb.syncRecords(records);
       if (settings) localDb.syncSettings(settings);
+      if (Array.isArray(users)) localDb.syncUsers(users);
       return res;
     } catch (err: any) {
       return { success: false, message: err.message || 'Không thể đồng bộ', storage: 'file' };
     }
+  },
+
+  async getAIStatus(): Promise<{ configured: boolean; keyPrefix?: string; defaultModel: string }> {
+    try {
+      return await fetchWithAuth('/api/ai/status');
+    } catch (_) {
+      return { configured: false, defaultModel: 'gemini-3.8-flash' };
+    }
+  },
+
+  async testAIConnection(): Promise<{ success: boolean; message: string; modelUsed?: string; keyPrefix?: string }> {
+    return await fetchWithAuth('/api/ai/test', { method: 'POST' });
   },
 };

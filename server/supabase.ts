@@ -390,8 +390,23 @@ export async function syncUserToSupabase(user: User): Promise<boolean> {
   if (!supabaseClient) return false;
   try {
     const { error } = await supabaseClient.from('users').upsert(user);
+    if (error) console.error('Supabase upsert user error:', error);
     return !error;
   } catch (err) {
+    console.error('Supabase upsert user exception:', err);
     return false;
   }
 }
+
+export async function deleteUserFromSupabase(id: string): Promise<boolean> {
+  if (!supabaseClient) return false;
+  try {
+    const { error } = await supabaseClient.from('users').delete().eq('id', id);
+    if (error) console.error('Supabase delete user error:', error);
+    return !error;
+  } catch (err) {
+    console.error('Supabase delete user exception:', err);
+    return false;
+  }
+}
+

@@ -2,7 +2,7 @@ import express from 'express';
 import path from 'path';
 import { createServer as createViteServer } from 'vite';
 import { db, computeScoreAndClassification, User, LessonRecord } from './db.ts';
-import { generateAIContent } from './gemini.ts';
+import { generateAIContent, getGeminiStatus, testGeminiConnection } from './gemini.ts';
 
 // In-memory token storage for active sessions
 const sessions = new Map<string, { userId: string; createdAt: number }>();
@@ -11,6 +11,16 @@ function generateToken(userId: string): string {
   const token = `tok_${userId}_${Date.now()}_${Math.random().toString(36).substring(2, 10)}`;
   sessions.set(token, { userId, createdAt: Date.now() });
   return token;
+}
+
+function extractUserIdFromToken(token: string): string | null {
+  if (!token || !token.startsWith('tok_')) return null;
+  // Format: tok_{userId}_{timestamp}_{random}
+  const last = token.lastIndexOf('_');
+  if (last === -1) return null;
+  const secondLast = token.lastIndexOf('_', last - 1);
+  if (secondLast <= 3) return null;
+  return token.substring(4, secondLast);
 }
 
 function getUserFromReq(req: express.Request): User | null {
@@ -23,16 +33,12 @@ function getUserFromReq(req: express.Request): User | null {
 
   let session = sessions.get(token);
   if (!session) {
-    // If token has valid format tok_{userId}_{timestamp}_{random}, recover session
-    if (token.startsWith('tok_')) {
-      const parts = token.split('_');
-      if (parts.length >= 2) {
-        const userId = parts[1];
-        const user = db.getUserById(userId);
-        if (user && user.status !== 'LOCKED') {
-          sessions.set(token, { userId, createdAt: Date.now() });
-          return user;
-        }
+    const userId = extractUserIdFromToken(token);
+    if (userId) {
+      const user = db.getUserById(userId) || db.getUserByEmailOrPhone(userId);
+      if (user && user.status !== 'LOCKED') {
+        sessions.set(token, { userId: user.id, createdAt: Date.now() });
+        return user;
       }
     }
     return null;
@@ -631,18 +637,37 @@ export function createApp() {
 
   app.put('/api/users/:id', requireAuth, requireAdmin, (req, res) => {
     const { id } = req.params;
-    const { full_name, email, phone, role, class_id, status } = req.body;
-    const updated = db.updateUser(id, {
-      full_name,
-      email,
-      phone,
-      role,
-      class_id: role === 'LPHT' ? class_id : null,
-      status,
-    });
+    const { full_name, email, phone, role, class_id, status, password } = req.body;
+    const updates: Partial<User> = {};
+    if (full_name !== undefined) updates.full_name = full_name;
+    if (email !== undefined && typeof email === 'string' && email.trim()) updates.email = email.trim();
+    if (phone !== undefined) updates.phone = phone;
+    if (role !== undefined) updates.role = role;
+    if (role === 'LPHT') {
+      if (class_id !== undefined) updates.class_id = class_id;
+    } else if (role !== undefined) {
+      updates.class_id = null;
+    }
+    if (status !== undefined) updates.status = status;
+    if (password && typeof password === 'string' && password.trim()) {
+      updates.password = password.trim();
+    }
+    const updated = db.updateUser(id, updates);
     if (!updated) return res.status(404).json({ error: 'Không tìm thấy người dùng.' });
     const { password: _, ...userSafe } = updated;
     res.json(userSafe);
+  });
+
+  app.delete('/api/users/:id', requireAuth, requireAdmin, (req, res) => {
+    const { id } = req.params;
+    const target = db.getUserById(id);
+    if (!target) return res.status(404).json({ error: 'Không tìm thấy người dùng.' });
+    if (target.id === 'usr-admin' || target.email.toLowerCase() === 'admin') {
+      return res.status(400).json({ error: 'Không thể xóa tài khoản Quản trị viên mặc định (Admin).' });
+    }
+    const ok = db.deleteUser(id);
+    if (!ok) return res.status(500).json({ error: 'Lỗi khi xóa người dùng.' });
+    res.json({ success: true, message: `Đã xóa người dùng ${target.full_name}.` });
   });
 
   app.post('/api/users/:id/reset-password', requireAuth, requireAdmin, (req, res) => {
@@ -1083,8 +1108,20 @@ VI. KẾT LUẬN`;
     const result = await generateAIContent(prompt);
     res.json(result);
   });
+
+  // AI Health and Connection Diagnostics
+  app.get('/api/ai/status', (req, res) => {
+    res.json(getGeminiStatus());
+  });
+
+  app.post('/api/ai/test', async (req, res) => {
+    const testResult = await testGeminiConnection();
+    res.json(testResult);
+  });
+
   return app;
 }
 
 export const app = createApp();
 export default app;
+

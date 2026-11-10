@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { api } from '../services/api.ts';
-import { Bot, Send, Sparkles, User, AlertCircle, RefreshCw, HelpCircle } from 'lucide-react';
+import { useSettings } from '../contexts/SettingsContext.tsx';
+import { Bot, Send, Sparkles, User, AlertCircle, RefreshCw, HelpCircle, CheckCircle2, ShieldAlert } from 'lucide-react';
 
 interface ChatMessage {
   id: string;
@@ -10,6 +11,9 @@ interface ChatMessage {
 }
 
 export const AIAssistantView: React.FC = () => {
+  const { settings } = useSettings();
+  const currentWeek = settings?.current_week || 1;
+
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       id: 'm1',
@@ -20,13 +24,42 @@ export const AIAssistantView: React.FC = () => {
   ]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
+  const [aiStatus, setAiStatus] = useState<{ configured: boolean; keyPrefix?: string; defaultModel?: string } | null>(null);
+  const [testingAi, setTestingAi] = useState(false);
+  const [testFeedback, setTestFeedback] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
+
+  useEffect(() => {
+    api.getAIStatus().then(setAiStatus).catch(() => {});
+  }, []);
+
+  const handleTestAI = async () => {
+    try {
+      setTestingAi(true);
+      setTestFeedback(null);
+      const res = await api.testAIConnection();
+      if (res.success) {
+        setTestFeedback({ type: 'success', message: res.message });
+      } else {
+        setTestFeedback({ type: 'error', message: res.message });
+      }
+      const st = await api.getAIStatus();
+      setAiStatus(st);
+    } catch (err: any) {
+      setTestFeedback({
+        type: 'error',
+        message: err.message || 'Không thể kết nối máy chủ AI lúc này.',
+      });
+    } finally {
+      setTestingAi(false);
+    }
+  };
 
   const sampleQuestions = [
-    'Lớp nào dẫn đầu thi đua tuần 5?',
-    'Lớp nào có điểm kỉ luật thấp nhất tuần này?',
-    'Đánh giá chung về 4 tiêu chí thi đua tuần 5',
+    `Lớp nào dẫn đầu thi đua tuần ${currentWeek}?`,
+    `Lớp nào có điểm kỉ luật thấp nhất tuần ${currentWeek}?`,
+    `Đánh giá chung về 4 tiêu chí thi đua tuần ${currentWeek}`,
     'Các lớp có nguy cơ tụt hạng và cần nhắc nhở',
-    'Lớp 12A1 đang xếp hạng mấy và điểm trung bình bao nhiêu?',
+    'Lớp 12/1B đang xếp hạng mấy và điểm trung bình bao nhiêu?',
   ];
 
   const handleSend = async (questionText?: string) => {
@@ -45,7 +78,7 @@ export const AIAssistantView: React.FC = () => {
     setLoading(true);
 
     try {
-      const res = await api.askAIAssistant(q, 5);
+      const res = await api.askAIAssistant(q, currentWeek);
       const aiMsg: ChatMessage = {
         id: `ai-${Date.now()}`,
         sender: 'ai',
@@ -57,7 +90,7 @@ export const AIAssistantView: React.FC = () => {
       const errorMsg: ChatMessage = {
         id: `ai-err-${Date.now()}`,
         sender: 'ai',
-        text: 'Tính năng AI hiện chưa khả dụng. Các chức năng quản lý và thống kê dữ liệu vẫn hoạt động bình thường.',
+        text: err?.message || 'Tính năng AI hiện chưa phản hồi. Vui lòng kiểm tra lại cấu hình GEMINI_API_KEY trên Vercel và bấm Redeploy.',
         time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       };
       setMessages((prev) => [...prev, errorMsg]);
@@ -69,9 +102,9 @@ export const AIAssistantView: React.FC = () => {
   return (
     <div className="space-y-4 animate-in fade-in duration-300 max-w-4xl mx-auto">
       {/* Header Banner */}
-      <div className="bg-linear-to-r from-indigo-700 via-blue-700 to-blue-800 p-5 rounded-2xl text-white shadow-md flex items-center justify-between">
+      <div className="bg-linear-to-r from-indigo-700 via-blue-700 to-blue-800 p-5 rounded-2xl text-white shadow-md flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div className="flex items-center gap-3">
-          <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center backdrop-blur-xs border border-white/20">
+          <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center backdrop-blur-xs border border-white/20 shrink-0">
             <Bot className="w-7 h-7 text-indigo-200" />
           </div>
           <div>
@@ -82,10 +115,70 @@ export const AIAssistantView: React.FC = () => {
           </div>
         </div>
 
-        <span className="hidden sm:inline-flex text-xs font-semibold px-3 py-1 rounded-full bg-white/20 border border-white/30 text-white">
-          Gemini 2.5 Flash
-        </span>
+        <div className="flex items-center gap-2">
+          <span
+            className={`text-xs font-semibold px-3 py-1 rounded-full border backdrop-blur-xs flex items-center gap-1.5 ${
+              aiStatus?.configured
+                ? 'bg-emerald-500/20 border-emerald-300 text-emerald-100'
+                : 'bg-amber-500/20 border-amber-300 text-amber-100'
+            }`}
+          >
+            <span
+              className={`w-2 h-2 rounded-full ${
+                aiStatus?.configured ? 'bg-emerald-400 animate-pulse' : 'bg-amber-400'
+              }`}
+            />
+            {aiStatus?.configured
+              ? `Gemini AI (${aiStatus.keyPrefix || 'Đã nạp key'})`
+              : 'Chưa có GEMINI_API_KEY'}
+          </span>
+
+          <button
+            onClick={handleTestAI}
+            disabled={testingAi}
+            className="text-xs bg-white/10 hover:bg-white/20 active:bg-white/30 px-3 py-1 rounded-full border border-white/30 text-white font-medium transition-all flex items-center gap-1.5 cursor-pointer disabled:opacity-50"
+            title="Kiểm tra kết nối trực tiếp đến Gemini API"
+          >
+            <RefreshCw className={`w-3 h-3 ${testingAi ? 'animate-spin' : ''}`} />
+            <span>{testingAi ? 'Đang test...' : 'Kiểm tra kết nối'}</span>
+          </button>
+        </div>
       </div>
+
+      {/* AI Test Feedback Bar */}
+      {testFeedback && (
+        <div
+          className={`p-3.5 rounded-xl border flex items-center gap-2 text-xs sm:text-sm animate-in fade-in duration-200 ${
+            testFeedback.type === 'success'
+              ? 'bg-emerald-50 border-emerald-200 text-emerald-800'
+              : 'bg-rose-50 border-rose-200 text-rose-800'
+          }`}
+        >
+          {testFeedback.type === 'success' ? (
+            <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
+          ) : (
+            <AlertCircle className="w-4 h-4 text-rose-600 shrink-0" />
+          )}
+          <span>{testFeedback.message}</span>
+        </div>
+      )}
+
+      {/* Help Alert if Key not configured */}
+      {aiStatus && !aiStatus.configured && (
+        <div className="p-3.5 bg-amber-50 border border-amber-200 rounded-xl text-amber-900 text-xs flex items-start gap-2.5">
+          <ShieldAlert className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+          <div className="space-y-1">
+            <div className="font-bold">Cách kích hoạt tính năng Gemini AI trên Vercel:</div>
+            <p className="text-amber-800 leading-relaxed">
+              1. Vào <strong>Vercel &gt; Settings &gt; Environment Variables</strong>, thêm biến: <code className="bg-white px-1 py-0.5 rounded border font-mono font-bold">GEMINI_API_KEY</code>
+              <br />
+              2. Vào tab <strong>Deployments &gt; Bấm dấu ... &gt; Chọn Redeploy</strong> để Vercel nạp khóa vào máy chủ.
+              <br />
+              3. Mọi thiết bị (điện thoại, máy tính, iPad) truy cập trang web sẽ tự động sử dụng được AI ngay lập tức!
+            </p>
+          </div>
+        </div>
+      )}
 
       {/* Suggested quick questions */}
       <div className="bg-white p-3.5 rounded-2xl border border-slate-200/80 shadow-xs">

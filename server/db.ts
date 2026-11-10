@@ -14,6 +14,7 @@ import {
   clearRecordsFromSupabase,
   syncSettingsToSupabase,
   syncUserToSupabase,
+  deleteUserFromSupabase,
   batchSyncRecordsToSupabase,
 } from './supabase.ts';
 
@@ -291,12 +292,13 @@ class Database {
 
   public getUserByEmailOrPhone(identifier: string): User | undefined {
     this.checkAndReload();
+    if (!identifier || typeof identifier !== 'string') return undefined;
     const clean = identifier.trim().toLowerCase();
     return this.data.users.find(
       (u) =>
-        u.email.toLowerCase() === clean ||
-        u.phone === identifier.trim() ||
-        (clean === 'admin' && (u.email.toLowerCase() === 'admin' || u.role === 'ADMIN'))
+        (u.email && typeof u.email === 'string' && u.email.toLowerCase() === clean) ||
+        (u.phone && typeof u.phone === 'string' && u.phone.trim() === identifier.trim()) ||
+        (clean === 'admin' && ((u.email && u.email.toLowerCase() === 'admin') || u.role === 'ADMIN'))
     );
   }
 
@@ -383,9 +385,16 @@ class Database {
     if (index === -1) return null;
 
     const oldUser = this.data.users[index];
+    const sanitizedUpdates: any = {};
+    for (const [k, v] of Object.entries(updates)) {
+      if (v !== undefined) {
+        sanitizedUpdates[k] = v;
+      }
+    }
+
     const updatedUser: User = {
       ...oldUser,
-      ...updates,
+      ...sanitizedUpdates,
       updated_at: new Date().toISOString(),
     };
     this.data.users[index] = updatedUser;
@@ -403,6 +412,17 @@ class Database {
     this.save();
     syncUserToSupabase(updatedUser).catch((e) => console.warn('Supabase syncUser error:', e));
     return updatedUser;
+  }
+
+  public deleteUser(id: string): boolean {
+    this.checkAndReload();
+    const index = this.data.users.findIndex((u) => u.id === id);
+    if (index === -1) return false;
+
+    const removed = this.data.users.splice(index, 1)[0];
+    this.save();
+    deleteUserFromSupabase(id).catch((e) => console.warn('Supabase deleteUser error:', e));
+    return true;
   }
 
   public addClass(cls: Omit<ClassItem, 'created_at' | 'updated_at'>): ClassItem {
